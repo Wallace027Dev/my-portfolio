@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-color: #090e16;
+  --rose: #c83267;
+  --purple: #7b4ae2;
+  --white: #ffffff;
+  --dark-purple: rgba(123, 74, 226, 0.1);
+  --gray: rgba(255, 255, 255, 0.5);
+}
+
+html {
+  background-color: var(--dark-color);
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: var(--dark-purple);
+  width: 102.5rem;
+  height: 4rem;
+  margin-top: 2.375rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+}
+
+.navigator {
+  display: flex;
+}
+
+.navigator p {
+  margin-left: 1.5rem;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.marcacao {
+  border: red solid 1px;
+}
+
+.my-paint {
+  height: 37.5rem;
+  margin: 0 8.438rem;
+}
+
+.my-info h2 {
+  background-color: var(--dark-purple);
+  color: var(--purple);
+  width: 10rem;
+  height: 2.813rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.my-info h1 {
+  font-weight: 800;
+  font-size: 3.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-info p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-info img {
+  height: 2.125rem;
+}
+
+.my-cv {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.cvDown {
+  width: 5.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.whatsapp {
+  width: 12.25rem;
+}
