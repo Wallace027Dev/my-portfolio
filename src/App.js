@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import Project from "./components/Project";
 import fotoPerfil from "./images/logo-perfil.svg";
 import logoWallace from "./images/logo-wallace.svg";
 import socialMedias from "./images/SocialMedias.svg";
@@ -8,6 +9,29 @@ import designIcon from "./images/DesignIcon.svg";
 import projectIcons from "./images/ProjectsIcon.svg";
 import codeIcon from "./images/CodeIcon.svg";
 import myPhoto from "./images/MyPhoto.jpg";
+import emBreve from "./images/EmBreve.png";
+import react from "./images/React.svg";
+import js from "./images/Javascript.svg";
+import html from "./images/HTML5.svg";
+import css from "./images/CSS3.svg";
+import github from "./images/Github.svg";
+import git from "./images/Git.svg";
+import node from "./images/Nodejs.svg";
+import tailwind from "./images/TailwindCSS.svg";
+import sass from "./images/Sass.svg";
+import mysql from "./images/MySQL.svg";
+import docker from "./images/Docker.svg";
+import postcss from "./images/PostCSS.svg";
+import webpack from "./images/Webpack.svg";
+import firebase from "./images/Firebase.svg";
+import vercel from "./images/Vercel.svg";
+import babel from "./images/Babel.svg";
+import c from "./images/C.svg";
+import ts from "./images/TypeScript.svg";
+import python from "./images/Python.svg";
+import php from "./images/PHP.svg";
+import java from "./images/Java.svg";
+import npm from "./images/npm.svg";
 
 export default function App() {
   return (
@@ -103,17 +127,80 @@ export default function App() {
         <div className="line"></div>
         {/* MEUS PROJETOS */}
         <section className="my-projects">
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
-          <div className="proj-container"></div>
+          <div>
+            <Project
+              project="Projeto vazio"
+              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
+              skill1="Typescript"
+              skill2="React JS"
+              skill3="Tailwind"
+              imageProject={emBreve}
+              acess="Projeto de tal"
+            />
+            <Project
+              project="Projeto vazio"
+              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
+              skill1="Typescript"
+              skill2="React JS"
+              skill3="Tailwind"
+              imageProject={emBreve}
+              acess="Projeto de tal"
+            />
+            <Project
+              project="Projeto vazio"
+              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
+              skill1="Typescript"
+              skill2="React JS"
+              skill3="Tailwind"
+              imageProject={emBreve}
+              acess="Projeto de tal"
+            />
+            <Project
+              project="Projeto vazio"
+              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
+              skill1="Typescript"
+              skill2="React JS"
+              skill3="Tailwind"
+              imageProject={emBreve}
+              acess="Projeto de tal"
+            />
+          </div>
         </section>
+        <div className="line"></div>
         {/* MINHAS TECNOLOGIAS */}
-        <section className="my-skills"></section>
+        <section className="my-skills">
+          <h3>🧑‍💻 Skills · Experiências</h3>
+          <h2>Tecnologias e habilidades</h2>
+          <p>Techs que uso no dia a dia</p>
+          <div>
+            <img src={html} alt="" />
+            <img src={css} alt="" />
+            <img src={js} alt="" />
+            <img src={react} alt="" />
+            <img src={node} alt="" />
+            <img src={tailwind} alt="" />
+            <img src={github} alt="" />
+            <img src={git} alt="" />
+						<img src={sass} alt="" />
+            <img src={mysql} alt="" />
+						<img src={npm} alt="" />
+            <img src={vercel} alt="" />
+            <img src={firebase} alt="" />
+          </div>
+          <p>Outras techs que já tive experiência</p>
+          <div>
+            <img src={python} alt="" />
+            <img src={ts} alt="" />
+            <img src={java} alt="" />
+            <img src={c} alt="" />
+            <img src={php} alt="" />
+            <img src={docker} alt="" />
+            <img src={postcss} alt="" />
+            <img src={babel} alt="" />
+            <img src={webpack} alt="" />
+          </div>
+        </section>
+        <div className="line"></div>
         {/* CONTATOS */}
         <section className="my-contacts"></section>
         {/* RODAPÉ */}
