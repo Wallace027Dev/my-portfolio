@@ -113,6 +113,7 @@ nav {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .cvDown {

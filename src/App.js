@@ -84,9 +84,7 @@ export default function App() {
           </div>
           <div>
             <h3>🤓 Sobre mim</h3>
-            <h2>
-              Wallace Vieira Dias Castro
-            </h2>
+            <h2>Wallace Vieira Dias Castro</h2>
             <p>
               👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me
               chamar apenas de Henrique. Prazer!
@@ -94,17 +92,32 @@ export default function App() {
             <p>
               👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com
               JavaScript, React JS e Typescript. <br />
-							🎓 Graduado em Análise e
-              Desenvolvimento de Sistemas pela Fatec de São José dos Campos <br />
-							💡
-              Interesses em desenvolvimento Front-end com React, React Native,
-              VueJS e UX/UI Design.
+              🎓 Graduado em Análise e Desenvolvimento de Sistemas pela Fatec de
+              São José dos Campos <br />
+              💡 Interesses em desenvolvimento Front-end com React, React
+              Native, VueJS e UX/UI Design.
             </p>
-						<p>
-						🚀 Tentando ser um pouquinho melhor do que ontem todos dias.
-						</p>
+            <p>🚀 Tentando ser um pouquinho melhor do que ontem todos dias.</p>
           </div>
         </section>
+        <div className="line"></div>
+        {/* MEUS PROJETOS */}
+        <section className="my-projects">
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+          <div className="proj-container"></div>
+        </section>
+        {/* MINHAS TECNOLOGIAS */}
+        <section className="my-skills"></section>
+        {/* CONTATOS */}
+        <section className="my-contacts"></section>
+        {/* RODAPÉ */}
+        <footer></footer>
       </main>
     </>
   );
