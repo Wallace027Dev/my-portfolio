@@ -32,29 +32,50 @@ import python from "./images/Python.svg";
 import php from "./images/PHP.svg";
 import java from "./images/Java.svg";
 import npm from "./images/npm.svg";
+import copy from "./images/copy.svg";
+import email from "./images/email.svg";
+import arrowUp from "./images/ArrowUp.svg";
+import linkedinWhite from "./images/linkedin.svg";
+import githubWhite from "./images/github-white.svg";
+
+//CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
+function devCount() {
+  const today = new Date();
+  const startDev = new Date("2020/09/23");
+  let age = today.getFullYear() - startDev.getFullYear();
+  const mon = today.getMonth() - startDev.getMonth();
+
+  if (mon < 0 || (mon === 0 && today.getDate() < startDev.getDate())) {
+    age--;
+  }
+
+  return age;
+}
 
 export default function App() {
   return (
     <>
-      <nav className="nav-bar">
-        <div>
-          <img src={logoWallace} alt="Perfil Logo" />
-        </div>
-        <div className="navigator">
-          <p>Home</p>
-          <p>Sobre Mim</p>
-          <p>Portifólio</p>
-          <p>Skills</p>
-          <p>Carreira</p>
-          <p>Recomendações</p>
-          <p>Contato</p>
+      <nav>
+        <div className="nav-bar">
+          <div>
+            <img src={logoWallace} alt="Perfil Logo" />
+          </div>
+          <div className="navigator">
+            <p>Home</p>
+            <p>Sobre Mim</p>
+            <p>Portifólio</p>
+            <p>Skills</p>
+            <p>Carreira</p>
+            <p>Recomendações</p>
+            <p>Contato</p>
+          </div>
         </div>
       </nav>
       <main>
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
         <section className="main-info">
           <div className="my-info">
-            <h2>👋 Saudações!</h2>
+            <h2 className="section-bar ">👋 Saudações!</h2>
             <h1>
               Wallace <br />
               Vieira{" "}
@@ -107,24 +128,17 @@ export default function App() {
             <h2>Trabalhos e Projetos</h2>
           </div>
           <div>
-            <h3>🤓 Sobre mim</h3>
+            <h3 className="section-bar ">🤓 Sobre mim</h3>
             <h2>Wallace Vieira Dias Castro</h2>
+            <p>👋 Olá mundo!</p>
             <p>
-              👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me
-              chamar apenas de Henrique. Prazer!
+              👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
+              🎓 Cursando Análise e Desenvolvimento de Sistemas pela <a href="https://estacio.br/">Estácio</a><br />
+              💡 Interesse em desenvolvimento Fullstack.
             </p>
-            <p>
-              👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com
-              JavaScript, React JS e Typescript. <br />
-              🎓 Graduado em Análise e Desenvolvimento de Sistemas pela Fatec de
-              São José dos Campos <br />
-              💡 Interesses em desenvolvimento Front-end com React, React
-              Native, VueJS e UX/UI Design.
-            </p>
-            <p>🚀 Tentando ser um pouquinho melhor do que ontem todos dias.</p>
+            <p>🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu." <i>Marcus Aurélius</i> </p>
           </div>
         </section>
-        <div className="line"></div>
         {/* MEUS PROJETOS */}
         <section className="my-projects">
           <div>
@@ -169,7 +183,7 @@ export default function App() {
         <div className="line"></div>
         {/* MINHAS TECNOLOGIAS */}
         <section className="my-skills">
-          <h3>🧑‍💻 Skills · Experiências</h3>
+          <h3 className="section-bar ">🧑‍💻 Skills · Experiências</h3>
           <h2>Tecnologias e habilidades</h2>
           <p>Techs que uso no dia a dia</p>
           <div>
@@ -181,9 +195,9 @@ export default function App() {
             <img src={tailwind} alt="" />
             <img src={github} alt="" />
             <img src={git} alt="" />
-						<img src={sass} alt="" />
+            <img src={sass} alt="" />
             <img src={mysql} alt="" />
-						<img src={npm} alt="" />
+            <img src={npm} alt="" />
             <img src={vercel} alt="" />
             <img src={firebase} alt="" />
           </div>
@@ -202,9 +216,38 @@ export default function App() {
         </section>
         <div className="line"></div>
         {/* CONTATOS */}
-        <section className="my-contacts"></section>
+        <section className="my-contacts">
+          <h3 className="section-bar">📬 Contatos</h3>
+          <h2>Vamos conversar!</h2>
+          <div className="link-contacts">
+            <img src={whatsapp} alt="Meu whatsapp" />
+            <div>
+              <img className="email-image" src={email} alt="Meu email" />
+              <p>wallaceofc@hotmail.com</p>
+              <img className="copy-image" src={copy} alt="Ícone de copiar" />
+            </div>
+          </div>
+          <a href="#">
+            Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{" "}
+          </a>
+        </section>
         {/* RODAPÉ */}
-        <footer></footer>
+        <footer>
+          <div className="foot">
+            <div>
+              <p>
+                Feito por{" "}
+                <a href="https://www.linkedin.com/in/wallace-dev/">
+                  Wallace Vieira
+                </a>{" "}
+              </p>
+            </div>
+            <div className="social-medias-foot">
+              <img src={githubWhite} alt="Ícone github branco" />
+              <img src={linkedinWhite} alt="Ícone linkedin branco" />
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );
