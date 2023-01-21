@@ -39,11 +39,18 @@ nav {
   align-items: center;
 }
 
-main {
+.main-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16rem;
+  margin-top: 12rem;
+}
+
+.line {
+  width: 112.5rem;
+  height: 1px;
+  background-color: var(--dark-purple);
+  margin: 8rem 0;
 }
 
 .nav-bar {
@@ -115,4 +122,94 @@ main {
 
 .whatsapp {
   width: 12.25rem;
+}
+
+.my-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-exp span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.my-exp > span > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--purple);
+  border-radius: 1rem;
+  width: 15rem;
+  height: 12.5rem;
+}
+
+.my-exp p {
+  font-size: 1rem;
+}
+
+.my-exp h2 {
+  font-size: 2rem;
+}
+
+.my-job {
+  margin-top: 2rem;
+  width: 56.25rem;
+  height: 6.875rem;
+  color: var(--purple);
+  background-color: var(--dark-purple);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.my-job h2 {
+  letter-spacing: 1rem;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16rem;
+}
+
+.about-me img {
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 20rem;
+  border: var(--white) solid 0.5rem;
+}
+
+.about-me h3 {
+  width: 10rem;
+  height: 2.815rem;
+  background: var(--dark-purple);
+  color: var(--purple);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.about-me h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+
+.about-me p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
 }
