@@ -2,7 +2,6 @@ import "./styles/App.css";
 import Project from "./components/Project";
 import fotoPerfil from "./images/logo-perfil.svg";
 import logoWallace from "./images/logo-wallace.svg";
-import socialMedias from "./images/SocialMedias.svg";
 import whatsapp from "./images/Whatsapp.svg";
 import cvDown from "./images/CVDownload.svg";
 import designIcon from "./images/DesignIcon.svg";
@@ -37,6 +36,7 @@ import email from "./images/email.svg";
 import arrowUp from "./images/ArrowUp.svg";
 import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
+import cvWallace from "./images/cv-wallace.jpg";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -56,52 +56,62 @@ export default function App() {
   return (
     <>
       <nav>
-        <div className="nav-bar">
-          <div>
-            <img src={logoWallace} alt="Perfil Logo" />
-          </div>
-          <div className="navigator">
-            <p>Home</p>
-            <p>Sobre Mim</p>
-            <p>Portifólio</p>
-            <p>Skills</p>
-            <p>Carreira</p>
-            <p>Recomendações</p>
-            <p>Contato</p>
+        <div className="nav center">
+          <div className="nav-bar">
+            <div>
+              <img src={logoWallace} alt="Perfil Logo" />
+            </div>
+            <div className="navigator">
+              <a href="#home">Home</a>
+              <a href="#my-exp">Carreira</a>
+              <a href="#about-me">Sobre Mim</a>
+              <a href="#my-projects">Portifólio</a>
+              <a href="#my-skills">Skills</a>
+              <a href="#my-contacts">Contato</a>
+            </div>
           </div>
         </div>
       </nav>
-      <main>
+      <main className="center">
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
-        <section className="main-info">
+        <section id="home" className="main-info center">
           <div className="my-info">
-            <h2 className="section-bar ">👋 Saudações!</h2>
+            <h2 className="section-bar">👋 Saudações!</h2>
             <h1>
               Wallace <br />
-              Vieira{" "}
+              Vieira
             </h1>
             <p>Fullstack developer</p>
-            <img src={socialMedias} alt="Social Medias" />
+            <a href="https://www.linkedin.com/in/wallace-dev/">
+              <img src={linkedinWhite} alt="Social Medias" />
+            </a>
+            <a href="https://github.com/Wallace027Dev">
+              <img src={githubWhite} alt="Social Medias" />
+            </a>
           </div>
           <div>
             <img className="my-paint" src={fotoPerfil} alt="Perfil Photo" />
           </div>
           <div className="my-cv">
-            <img className="cvDown" src={cvDown} alt="Download my CV" />
-            <img
-              className="whatsapp"
-              src={whatsapp}
-              alt="Tell me in whatsapp"
-            />
+            <a href={cvWallace} download="CV-Wallace">
+              <img className="cvDown" src={cvDown} alt="Download my CV" />
+            </a>
+            <a href="https://wa.me/qr/YWSCEX37OD3QH1">
+              <img
+                className="whatsapp"
+                src={whatsapp}
+                alt="Tell me in whatsapp"
+              />
+            </a>
           </div>
         </section>
         <div className="line"></div>
         {/* MINHAS EXPERIÊNCIAS */}
-        <section className="my-exp">
-          <span>
+        <section id="my-exp" className="my-exp">
+          <span className="exp-span center">
             <div>
               <img src={codeIcon} alt="Ícone de código" />
-              <p>2 anos estudando</p>
+              <p>{devCount()} anos estudando</p>
               <h2>Programação</h2>
             </div>
             <div>
@@ -115,14 +125,14 @@ export default function App() {
               <h2>Sistemas</h2>
             </div>
           </span>
-          <div className="my-job">
+          <div className="my-job center">
             <p>DESENVOLVEDOR</p>
             <h2>FULLSTACK</h2>
           </div>
         </section>
         <div className="line"></div>
         {/* SOBRE MIM */}
-        <section className="about-me">
+        <section id="about-me" className="about-me center">
           <div>
             <img src={myPhoto} alt="Minha foto" />
             <h2>Trabalhos e Projetos</h2>
@@ -133,15 +143,21 @@ export default function App() {
             <p>👋 Olá mundo!</p>
             <p>
               👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
-              🎓 Cursando Análise e Desenvolvimento de Sistemas pela <a href="https://estacio.br/">Estácio</a><br />
+              🎓 Cursando Análise e Desenvolvimento de Sistemas pela{" "}
+              <a href="https://estacio.br/">Estácio</a>
+              <br />
               💡 Interesse em desenvolvimento Fullstack. <br />
-              ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários, estudar programação e sair com amigos.
+              ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários,
+              estudar programação e sair com amigos.
             </p>
-            <p>🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu." <i>Marcus Aurélius</i> </p>
+            <p>
+              🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{" "}
+              <i>Marcus Aurélius</i>{" "}
+            </p>
           </div>
         </section>
         {/* MEUS PROJETOS */}
-        <section className="my-projects">
+        <section id="my-projects" className="my-projects">
           <div>
             <Project
               project="Projeto vazio"
@@ -151,6 +167,7 @@ export default function App() {
               skill3="Tailwind"
               imageProject={emBreve}
               acess="Projeto de tal"
+              linkProject="exemploLink"
             />
             <Project
               project="Projeto vazio"
@@ -160,6 +177,7 @@ export default function App() {
               skill3="Tailwind"
               imageProject={emBreve}
               acess="Projeto de tal"
+              linkProject="exemploLink"
             />
             <Project
               project="Projeto vazio"
@@ -169,6 +187,7 @@ export default function App() {
               skill3="Tailwind"
               imageProject={emBreve}
               acess="Projeto de tal"
+              linkProject="exemploLink"
             />
             <Project
               project="Projeto vazio"
@@ -178,49 +197,50 @@ export default function App() {
               skill3="Tailwind"
               imageProject={emBreve}
               acess="Projeto de tal"
+              linkProject="exemploLink"
             />
           </div>
         </section>
         <div className="line"></div>
         {/* MINHAS TECNOLOGIAS */}
-        <section className="my-skills">
+        <section id="my-skills" className="my-skills center">
           <h3 className="section-bar ">🧑‍💻 Skills · Experiências</h3>
           <h2>Tecnologias e habilidades</h2>
           <p>Techs que uso no dia a dia</p>
           <div>
-            <img src={html} alt="" />
-            <img src={css} alt="" />
-            <img src={js} alt="" />
-            <img src={react} alt="" />
-            <img src={node} alt="" />
-            <img src={tailwind} alt="" />
-            <img src={github} alt="" />
-            <img src={git} alt="" />
-            <img src={sass} alt="" />
-            <img src={mysql} alt="" />
-            <img src={npm} alt="" />
-            <img src={vercel} alt="" />
-            <img src={firebase} alt="" />
+            <img src={html} alt="HMTL Image" />
+            <img src={css} alt="CSS Image" />
+            <img src={js} alt=" Javascript Image" />
+            <img src={react} alt="React Image" />
+            <img src={node} alt="Node Image" />
+            <img src={tailwind} alt="Tailwind Image" />
+            <img src={github} alt="Github Image" />
+            <img src={git} alt="Git Image" />
+            <img src={sass} alt="Sass Image" />
+            <img src={mysql} alt="MySQL Image" />
+            <img src={npm} alt="NPM Image" />
+            <img src={vercel} alt="Vercel Image" />
+            <img src={firebase} alt="Firebase" />
           </div>
           <p>Outras techs que já tive experiência</p>
           <div>
-            <img src={python} alt="" />
-            <img src={ts} alt="" />
-            <img src={java} alt="" />
-            <img src={c} alt="" />
-            <img src={php} alt="" />
-            <img src={docker} alt="" />
-            <img src={postcss} alt="" />
-            <img src={babel} alt="" />
-            <img src={webpack} alt="" />
+            <img src={python} alt="Python Image" />
+            <img src={ts} alt="Typescript Image" />
+            <img src={java} alt="JAva Image" />
+            <img src={c} alt="C Image" />
+            <img src={php} alt="PHP Image" />
+            <img src={docker} alt="Docker Image" />
+            <img src={postcss} alt="PostCSS Image" />
+            <img src={babel} alt="Babel Image" />
+            <img src={webpack} alt="Webpack Image" />
           </div>
         </section>
         <div className="line"></div>
         {/* CONTATOS */}
-        <section className="my-contacts">
+        <section id="my-contacts" className="my-contacts center">
           <h3 className="section-bar">📬 Contatos</h3>
           <h2>Vamos conversar!</h2>
-          <div className="link-contacts">
+          <div className="link-contacts center">
             <img src={whatsapp} alt="Meu whatsapp" />
             <div>
               <img className="email-image" src={email} alt="Meu email" />
@@ -233,20 +253,22 @@ export default function App() {
           </a>
         </section>
         {/* RODAPÉ */}
-        <footer>
+        <footer className="center">
           <div className="foot">
-            <div>
-              <p>
-                Feito por{" "}
-                <a href="https://www.linkedin.com/in/wallace-dev/">
-                  Wallace Vieira
-                </a>{" "}
-              </p>
-            </div>
-            <div className="social-medias-foot">
-              <img src={githubWhite} alt="Ícone github branco" />
-              <img src={linkedinWhite} alt="Ícone linkedin branco" />
-            </div>
+            <p>
+              Feito por{" "}
+              <a href="https://www.linkedin.com/in/wallace-dev/">
+                Wallace Vieira
+              </a>{" "}
+            </p>
+          </div>
+          <div className="social-medias-foot">
+            <a href="https://www.linkedin.com/in/wallace-dev/">
+              <img src={linkedinWhite} alt="Social Medias" />
+            </a>
+            <a href="https://github.com/Wallace027Dev">
+              <img src={githubWhite} alt="Social Medias" />
+            </a>
           </div>
         </footer>
       </main>

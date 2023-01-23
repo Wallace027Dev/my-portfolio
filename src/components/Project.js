@@ -14,7 +14,9 @@ export default function Project(props) {
             <h4>{props.skill2}</h4>
             <h4>{props.skill3}</h4>
           </div>
-          <img src={props.imageProject} alt={props.acess} />
+          <a href={props.linkProject}>
+            <img src={props.imageProject} alt={props.acess} />
+          </a>
         </div>
       </div>
     </>

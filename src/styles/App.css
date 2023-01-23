@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
 :root {
   --dark-color: #090e16;
   --rose: #c83267;
@@ -13,6 +7,18 @@
   --white: #ffffff;
   --dark-purple: rgba(123, 74, 226, 0.1);
   --gray: rgba(255, 255, 255, 0.5);
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 html {
@@ -23,15 +29,21 @@ html {
   font-weight: 400;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark-purple);
+}
+
+main {
+  flex-direction: column;
 }
 
 a {
-	font-weight: 600;
-	color: var(--white);
+  font-weight: 600;
+  color: var(--white);
 }
 
 .nav-bar {
@@ -61,7 +73,7 @@ a {
 }
 
 .line {
-  width: 112.5rem;
+  width: 90%;
   height: 1px;
   background-color: var(--dark-purple);
   margin: 8rem 0;
@@ -71,22 +83,20 @@ a {
   display: flex;
 }
 
-.navigator p {
+.navigator a {
   margin-left: 1.5rem;
   color: var(--gray);
+  font-weight: 400;
   cursor: pointer;
 }
 
 .main-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 12rem;
+  gap: 15%;
 }
 
 .my-paint {
   height: 37.5rem;
-  margin: 0 17rem;
 }
 
 .my-info h1 {
@@ -103,6 +113,7 @@ a {
 
 .my-info img {
   height: 2.125rem;
+  margin-right: 1rem;
 }
 
 .my-cv {
@@ -122,20 +133,14 @@ a {
 }
 
 .my-exp {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.my-exp span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.exp-span {
   gap: 5rem;
 }
 
-.my-exp > span > div {
+.exp-span div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,9 +166,6 @@ a {
   color: var(--purple);
   background-color: var(--dark-purple);
   border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -172,9 +174,6 @@ a {
 }
 
 .about-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
   gap: 14rem;
 }
@@ -200,9 +199,7 @@ a {
 }
 
 .my-projects {
-	margin-top: 6.25rem;
-  display: flex;
-  justify-content: center;
+  margin-top: 6.25rem;
 }
 
 .my-projects > div {
@@ -213,9 +210,6 @@ a {
 }
 
 .my-skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -237,9 +231,6 @@ a {
 }
 
 .my-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -259,8 +250,6 @@ a {
 }
 
 .link-contacts {
-  display: flex;
-  align-items: center;
   flex-direction: row;
   font-size: 1.25rem;
   color: var(--gray);
@@ -269,7 +258,7 @@ a {
 .link-contacts > img {
   height: 3.75rem;
   margin-right: 2.5rem;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .link-contacts div {
@@ -289,27 +278,20 @@ a {
   margin-top: 1.5rem;
 }
 
-.foot {
+footer {
   background-color: var(--dark-purple);
   height: 5.5rem;
   width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5rem;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .foot a {
-	font-weight: 700;
-	color: var(--purple);
-}
-
-.social-medias-foot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 700;
+  color: var(--purple);
 }
 
 .social-medias-foot img {
   margin: 0 1.25rem;
+  height: 2rem;
 }
