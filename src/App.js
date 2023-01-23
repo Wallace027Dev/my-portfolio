@@ -134,7 +134,8 @@ export default function App() {
             <p>
               👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
               🎓 Cursando Análise e Desenvolvimento de Sistemas pela <a href="https://estacio.br/">Estácio</a><br />
-              💡 Interesse em desenvolvimento Fullstack.
+              💡 Interesse em desenvolvimento Fullstack. <br />
+              ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários, estudar programação e sair com amigos.
             </p>
             <p>🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu." <i>Marcus Aurélius</i> </p>
           </div>
