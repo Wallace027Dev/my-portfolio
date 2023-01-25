@@ -10,9 +10,9 @@
 }
 
 .center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 * {
@@ -175,7 +175,7 @@ a {
 
 .about-me {
   flex-direction: row;
-  gap: 14rem;
+  gap: 10%;
 }
 
 .about-me img {
@@ -294,4 +294,42 @@ footer {
 .social-medias-foot img {
   margin: 0 1.25rem;
   height: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .my-projects > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-info {
+    margin-top: 6rem;
+  }
+
+  .my-paint {
+    height: 30rem;
+  }
+
+  .about-me img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about-me h2 {
+    margin: 1rem 0;
+  }
+
+  .my-projects > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .my-skills div {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 2rem;
+  }
 }

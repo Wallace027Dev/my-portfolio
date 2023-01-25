@@ -37,6 +37,7 @@ import arrowUp from "./images/ArrowUp.svg";
 import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
 import cvWallace from "./images/cv-wallace.jpg";
+import authStorage from "./images/projectThumbs/auth-storage.png";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -160,7 +161,17 @@ export default function App() {
         <section id="my-projects" className="my-projects">
           <div>
             <Project
-              project="Projeto vazio"
+              projectName="Autenticação e Armazenamento"
+              subtitle="Nesse projeto foi usado React, Routers e Firebase. <br/ >Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
+              skill1="Firebase"
+              skill2="React JS"
+              skill3="Tailwind"
+              imageProject={authStorage}
+              acess="Autenticação e Armazenamento"
+              linkProject="https://autenticacao-e-armazenamento-react.vercel.app/login"
+            />
+            <Project
+              projectName="Projeto vazio"
               subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
               skill1="Typescript"
               skill2="React JS"
@@ -170,7 +181,7 @@ export default function App() {
               linkProject="exemploLink"
             />
             <Project
-              project="Projeto vazio"
+              projectName="Projeto vazio"
               subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
               skill1="Typescript"
               skill2="React JS"
@@ -180,17 +191,7 @@ export default function App() {
               linkProject="exemploLink"
             />
             <Project
-              project="Projeto vazio"
-              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
-              skill1="Typescript"
-              skill2="React JS"
-              skill3="Tailwind"
-              imageProject={emBreve}
-              acess="Projeto de tal"
-              linkProject="exemploLink"
-            />
-            <Project
-              project="Projeto vazio"
+              projectName="Projeto vazio"
               subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
               skill1="Typescript"
               skill2="React JS"
@@ -226,7 +227,7 @@ export default function App() {
           <div>
             <img src={python} alt="Python Image" />
             <img src={ts} alt="Typescript Image" />
-            <img src={java} alt="JAva Image" />
+            <img src={java} alt="Java Image" />
             <img src={c} alt="C Image" />
             <img src={php} alt="PHP Image" />
             <img src={docker} alt="Docker Image" />
