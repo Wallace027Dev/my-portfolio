@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import "animate.css";
 import Project from "./components/Project";
 import fotoPerfil from "./images/logo-perfil.svg";
 import logoWallace from "./images/logo-wallace.svg";
@@ -73,11 +74,11 @@ export default function App() {
           </div>
         </div>
       </nav>
-      <main className="center">
+      <main className="center col">
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
         <section id="home" className="main-info center">
           <div className="my-info">
-            <h2 className="section-bar">👋 Saudações!</h2>
+            <h2 className="section-bar center">👋 Saudações!</h2>
             <h1>
               Wallace <br />
               Vieira
@@ -134,13 +135,13 @@ export default function App() {
         <div className="line"></div>
         {/* SOBRE MIM */}
         <section id="about-me" className="about-me center">
-          <div>
+          <div className="center col">
             <img src={myPhoto} alt="Minha foto" />
-            <h3 className="section-bar disappearTablet">🔗 Portfólio</h3>
-            <h2 className="disappear">Trabalhos e Projetos</h2>
+            <h3 className="section-bar center disappearTablet">🔗 Portfólio</h3>
+            <h2 className="disappearTablet">Trabalhos e Projetos</h2>
           </div>
           <div>
-            <h3 className="section-bar">🤓 Sobre mim</h3>
+            <h3 className="section-bar center">🤓 Sobre mim</h3>
             <h2>Wallace Vieira Dias Castro</h2>
             <p>👋 Olá mundo!</p>
             <span className="about-span">
@@ -165,7 +166,7 @@ export default function App() {
           <div>
             <Project
               projectName="Autenticação e Armazenamento"
-              subtitle="Nesse projeto foi usado React, Routers e Firebase. <br/ >Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
+              subtitle="Nesse projeto foi usado React, Routers e Firebase. Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
               skill1="Firebase"
               skill2="React JS"
               skill3="Tailwind"
@@ -208,7 +209,7 @@ export default function App() {
         <div className="line"></div>
         {/* MINHAS TECNOLOGIAS */}
         <section id="my-skills" className="my-skills center">
-          <h3 className="section-bar ">🧑‍💻 Skills · Experiências</h3>
+          <h3 className="section-bar center">🧑‍💻 Skills · Experiências</h3>
           <h2>Tecnologias e habilidades</h2>
           <p>Techs que uso no dia a dia</p>
           <div>
@@ -242,7 +243,7 @@ export default function App() {
         <div className="line"></div>
         {/* CONTATOS */}
         <section id="my-contacts" className="my-contacts center">
-          <h3 className="section-bar">📬 Contatos</h3>
+          <h3 className="section-bar center">📬 Contatos</h3>
           <h2>Vamos conversar!</h2>
           <div className="link-contacts center">
             <img src={whatsapp} alt="Meu whatsapp" />

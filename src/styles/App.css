@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
+
 :root {
   --dark-color: #090e16;
   --rose: #c83267;
@@ -37,7 +38,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--dark-purple);
 }
 
-main {
+.col {
   flex-direction: column;
 }
 
@@ -59,9 +60,6 @@ a {
 }
 
 .section-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--dark-purple);
   width: 15rem;
   height: 3rem;
