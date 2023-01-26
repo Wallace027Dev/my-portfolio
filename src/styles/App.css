@@ -200,6 +200,10 @@ a {
   max-width: 56.25rem;
 }
 
+.about-me a {
+  color: var(--gray);
+}
+
 .my-projects {
   margin-top: 6.25rem;
 }
@@ -341,10 +345,10 @@ footer {
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 2rem;
   }
-	
-	.my-skills img {
-  margin: 1.2rem 1.5rem;
-}
+
+  .my-skills img {
+    margin: 1.2rem 1.5rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -386,9 +390,9 @@ footer {
     grid-column-gap: 2rem;
   }
 
-	.my-skills h2 {
-		font-size: 2rem;
-	}
+  .my-skills h2 {
+    font-size: 2rem;
+  }
 
   .my-contacts a {
     margin: 4rem 0;
@@ -450,19 +454,18 @@ footer {
     visibility: hidden;
   }
 
-	.nav-bar {
-		width: 0%;
-		height: 0rem;
-		margin-top: 0rem;
-		padding: 0.5rem 0;
-	}
+  .nav-bar {
+    width: 0%;
+    height: 0rem;
+    margin-top: 0rem;
+    padding: 0.5rem 0;
+  }
 
-	.navigator a {
-		margin-left: 0rem;
-	}
+  .navigator a {
+    margin-left: 0rem;
+  }
 
-
-	.my-paint {
+  .my-paint {
     height: 20rem;
   }
 
@@ -472,16 +475,16 @@ footer {
 
   .my-job {
     width: 18rem;
-		height: 4rem;
+    height: 4rem;
   }
 
-	.my-job p {
-		font-size: 1rem;
-	}
+  .my-job p {
+    font-size: 1rem;
+  }
 
-	.my-job h2 {
-		font-size: 1.2rem;
-	}
+  .my-job h2 {
+    font-size: 1.2rem;
+  }
 
   .about-me img {
     width: 15rem;
@@ -495,7 +498,7 @@ footer {
     flex-direction: column;
   }
 
-	.about-me h2 {
+  .about-me h2 {
     font-size: 1.5rem;
   }
 
@@ -503,40 +506,40 @@ footer {
     margin: 0 3rem;
   }
 
-	.my-skills div {
+  .my-skills div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
   }
 
-	.my-skills h2 {
-		font-size: 1.5rem;
-	}
+  .my-skills h2 {
+    font-size: 1.5rem;
+  }
 
-	.my-skills p {
-		font-size: 1rem;
-	}
+  .my-skills p {
+    font-size: 1rem;
+  }
 
-	.link-contacts {
-		flex-direction: column;
-	}
-	
-	footer {
-		height: 5.5rem;
-		width: 100%;
-		gap: 1rem;
-	}
-	
-	.social-medias-foot img {
-		margin: 0 0.5rem;
-	}
+  .link-contacts {
+    flex-direction: column;
+  }
 
-	.my-contacts h2 {
-		font-size: 1.5rem;
-	}
+  footer {
+    height: 5.5rem;
+    width: 100%;
+    gap: 1rem;
+  }
 
-	.link-contacts > img {
-		height: 3rem;
-		margin-right: 0rem;
-	}
+  .social-medias-foot img {
+    margin: 0 0.5rem;
+  }
+
+  .my-contacts h2 {
+    font-size: 1.5rem;
+  }
+
+  .link-contacts > img {
+    height: 3rem;
+    margin-right: 0rem;
+  }
 }
