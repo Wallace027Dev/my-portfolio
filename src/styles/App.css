@@ -463,7 +463,12 @@ footer {
 
   .navigator a {
     margin-left: 0rem;
+		font-size: 0rem;
   }
+
+	.nav-bar img {
+		height: 0rem;
+	}
 
   .my-paint {
     height: 20rem;
