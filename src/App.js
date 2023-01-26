@@ -56,7 +56,7 @@ function devCount() {
 export default function App() {
   return (
     <>
-      <nav>
+      <nav className="disappearCellphone">
         <div className="nav center">
           <div className="nav-bar">
             <div>
@@ -136,25 +136,28 @@ export default function App() {
         <section id="about-me" className="about-me center">
           <div>
             <img src={myPhoto} alt="Minha foto" />
-            <h2>Trabalhos e Projetos</h2>
+            <h3 className="section-bar disappearTablet">🔗 Portfólio</h3>
+            <h2 className="disappear">Trabalhos e Projetos</h2>
           </div>
           <div>
-            <h3 className="section-bar ">🤓 Sobre mim</h3>
+            <h3 className="section-bar">🤓 Sobre mim</h3>
             <h2>Wallace Vieira Dias Castro</h2>
             <p>👋 Olá mundo!</p>
-            <p>
-              👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
-              🎓 Cursando Análise e Desenvolvimento de Sistemas pela{" "}
-              <a href="https://estacio.br/">Estácio</a>
-              <br />
-              💡 Interesse em desenvolvimento Fullstack. <br />
-              ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários,
-              estudar programação e sair com amigos.
-            </p>
-            <p>
-              🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{" "}
-              <i>Marcus Aurélius</i>{" "}
-            </p>
+            <span className="about-span">
+              <p>
+                👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
+                🎓 Cursando Análise e Desenvolvimento de Sistemas pela{" "}
+                <a href="https://estacio.br/">Estácio</a>
+                <br />
+                💡 Interesse em desenvolvimento Fullstack. <br />
+                ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários,
+                estudar programação e sair com amigos.
+              </p>
+              <p>
+                🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{" "}
+                <i>Marcus Aurélius</i>{" "}
+              </p>
+            </span>
           </div>
         </section>
         {/* MEUS PROJETOS */}

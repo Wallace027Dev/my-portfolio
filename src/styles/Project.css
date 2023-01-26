@@ -46,3 +46,17 @@
   height: 14rem;
   border-radius: 0.5rem;
 }
+
+@media (max-width: 425px) {
+	.container {
+		width: 16rem;
+		height: 28rem;
+		padding: 1.2rem 1.2rem;
+	}
+
+	.container img {
+		width: 16rem;
+		height:9rem;
+		border-radius: 0.5rem;
+	}
+}
