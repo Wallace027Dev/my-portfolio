@@ -1,5 +1,4 @@
 import "./styles/App.css";
-import "animate.css";
 import Project from "./components/Project";
 import fotoPerfil from "./images/logo-perfil.svg";
 import logoWallace from "./images/logo-wallace.svg";
