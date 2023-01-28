@@ -1,3 +1,13 @@
+.transit-proj {
+  transition: transform 0.51s;
+}
+
+.transit-proj:hover,
+.transit-proj:focus {
+  transform: translateX(-1px) scale(1.1);
+	background-color: var(--dark-purple);
+}
+
 .container {
   width: 22.5rem;
   height: 28.75rem;

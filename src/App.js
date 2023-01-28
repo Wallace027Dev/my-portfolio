@@ -54,6 +54,9 @@ function devCount() {
   return age;
 }
 
+//FUNCÃO DE COPIAR EMAIL
+
+
 export default function App() {
   return (
     <>
@@ -64,12 +67,24 @@ export default function App() {
               <img src={logoWallace} alt="Perfil Logo" />
             </div>
             <div className="navigator">
-              <a href="#home">Home</a>
-              <a href="#my-exp">Carreira</a>
-              <a href="#about-me">Sobre Mim</a>
-              <a href="#my-projects">Portifólio</a>
-              <a href="#my-skills">Skills</a>
-              <a href="#my-contacts">Contato</a>
+              <a className="transit" href="#home">
+                Home
+              </a>
+              <a className="transit" href="#my-exp">
+                Carreira
+              </a>
+              <a className="transit" href="#about-me">
+                Sobre Mim
+              </a>
+              <a className="transit" href="#my-projects">
+                Portifólio
+              </a>
+              <a className="transit" href="#my-skills">
+                Skills
+              </a>
+              <a className="transit" href="#my-contacts">
+                Contato
+              </a>
             </div>
           </div>
         </div>
@@ -85,10 +100,14 @@ export default function App() {
             </h1>
             <p>Fullstack developer</p>
             <a href="https://www.linkedin.com/in/wallace-dev/">
-              <img src={linkedinWhite} alt="Social Medias" />
+              <img
+                className="transit"
+                src={linkedinWhite}
+                alt="Social Medias"
+              />
             </a>
             <a href="https://github.com/Wallace027Dev">
-              <img src={githubWhite} alt="Social Medias" />
+              <img className="transit" src={githubWhite} alt="Social Medias" />
             </a>
           </div>
           <div>
@@ -96,11 +115,15 @@ export default function App() {
           </div>
           <div className="my-cv">
             <a href={cvWallace} download="CV-Wallace">
-              <img className="cvDown" src={cvDown} alt="Download my CV" />
+              <img
+                className="cvDown transit"
+                src={cvDown}
+                alt="Download my CV"
+              />
             </a>
             <a href="https://wa.me/qr/YWSCEX37OD3QH1">
               <img
-                className="whatsapp"
+                className="whatsapp transit"
                 src={whatsapp}
                 alt="Tell me in whatsapp"
               />
@@ -213,31 +236,31 @@ export default function App() {
           <h2>Tecnologias e habilidades</h2>
           <p>Techs que uso no dia a dia</p>
           <div>
-            <img src={html} alt="HMTL Image" />
-            <img src={css} alt="CSS Image" />
-            <img src={js} alt=" Javascript Image" />
-            <img src={react} alt="React Image" />
-            <img src={node} alt="Node Image" />
-            <img src={tailwind} alt="Tailwind Image" />
-            <img src={github} alt="Github Image" />
-            <img src={git} alt="Git Image" />
-            <img src={sass} alt="Sass Image" />
-            <img src={mysql} alt="MySQL Image" />
-            <img src={npm} alt="NPM Image" />
-            <img src={vercel} alt="Vercel Image" />
-            <img src={firebase} alt="Firebase" />
+            <img className="transit" src={html} alt="HMTL Image" />
+            <img className="transit" src={css} alt="CSS Image" />
+            <img className="transit" src={js} alt=" Javascript Image" />
+            <img className="transit" src={react} alt="React Image" />
+            <img className="transit" src={node} alt="Node Image" />
+            <img className="transit" src={tailwind} alt="Tailwind Image" />
+            <img className="transit" src={github} alt="Github Image" />
+            <img className="transit" src={git} alt="Git Image" />
+            <img className="transit" src={sass} alt="Sass Image" />
+            <img className="transit" src={mysql} alt="MySQL Image" />
+            <img className="transit" src={npm} alt="NPM Image" />
+            <img className="transit" src={vercel} alt="Vercel Image" />
+            <img className="transit" src={firebase} alt="Firebase" />
           </div>
           <p>Outras techs que já tive experiência</p>
           <div>
-            <img src={python} alt="Python Image" />
-            <img src={ts} alt="Typescript Image" />
-            <img src={java} alt="Java Image" />
-            <img src={c} alt="C Image" />
-            <img src={php} alt="PHP Image" />
-            <img src={docker} alt="Docker Image" />
-            <img src={postcss} alt="PostCSS Image" />
-            <img src={babel} alt="Babel Image" />
-            <img src={webpack} alt="Webpack Image" />
+            <img className="transit" src={python} alt="Python Image" />
+            <img className="transit" src={ts} alt="Typescript Image" />
+            <img className="transit" src={java} alt="Java Image" />
+            <img className="transit" src={c} alt="C Image" />
+            <img className="transit" src={php} alt="PHP Image" />
+            <img className="transit" src={docker} alt="Docker Image" />
+            <img className="transit" src={postcss} alt="PostCSS Image" />
+            <img className="transit" src={babel} alt="Babel Image" />
+            <img className="transit" src={webpack} alt="Webpack Image" />
           </div>
         </section>
         <div className="line"></div>
@@ -246,11 +269,17 @@ export default function App() {
           <h3 className="section-bar center">📬 Contatos</h3>
           <h2>Vamos conversar!</h2>
           <div className="link-contacts center">
-            <img src={whatsapp} alt="Meu whatsapp" />
+            <img className="transit" src={whatsapp} alt="Meu whatsapp" />
             <div>
               <img className="email-image" src={email} alt="Meu email" />
-              <p>wallaceofc@hotmail.com</p>
-              <img className="copy-image" src={copy} alt="Ícone de copiar" />
+              <p>
+                wallaceofc@hotmail.com
+              </p>
+              <img
+                className="copy-image transit"
+                src={copy}
+                alt="Ícone de copiar"
+              />
             </div>
           </div>
           <a href="#">

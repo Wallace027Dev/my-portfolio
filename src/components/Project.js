@@ -4,7 +4,7 @@ export default function Project(props) {
   return (
     <>
       <a href={props.linkProject}>
-        <div className="container">
+        <div className="container transit-proj">
           <div>
             <h3>{props.projectName}</h3>
             <p>{props.subtitle}</p>
