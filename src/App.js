@@ -56,7 +56,6 @@ function devCount() {
 
 //FUNCÃO DE COPIAR EMAIL
 
-
 export default function App() {
   return (
     <>
@@ -272,9 +271,7 @@ export default function App() {
             <img className="transit" src={whatsapp} alt="Meu whatsapp" />
             <div>
               <img className="email-image" src={email} alt="Meu email" />
-              <p>
-                wallaceofc@hotmail.com
-              </p>
+              <p>wallaceofc@hotmail.com</p>
               <img
                 className="copy-image transit"
                 src={copy}
