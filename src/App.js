@@ -190,20 +190,20 @@ export default function App() {
               subtitle="Nesse projeto foi usado React, Routers e Firebase. Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
               skill1="Firebase"
               skill2="React JS"
-              skill3="Tailwind"
+              skill3="Javascript"
               imageProject={authStorage}
               acess="Autenticação e Armazenamento"
               linkProject="https://autenticacao-e-armazenamento-react.vercel.app/login"
             />
             <Project
-              projectName="Projeto vazio"
-              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
-              skill1="Typescript"
-              skill2="React JS"
+              projectName="To Do List"
+              subtitle="Uma lista de tarefas desenvolvida com JS puro, manipulando o DOM e Eventos(). No projeto foi usado o pré-processador Tailwind para estilização e transpilado com Babel."
+              skill1="Javscript"
+              skill2="Babel"
               skill3="Tailwind"
               imageProject={emBreve}
-              acess="Projeto de tal"
-              linkProject="exemploLink"
+              acess="To Do List"
+              linkProject="https://to-do-olive-six.vercel.app/"
             />
             <Project
               projectName="Projeto vazio"
