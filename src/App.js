@@ -38,6 +38,7 @@ import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
 import cvWallace from "./images/cv-wallace.jpg";
 import authStorage from "./images/projectThumbs/auth-storage.png";
+import todoPrint from "./images/projectThumbs/todoPrint.png";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -75,7 +76,7 @@ export default function App() {
                 Sobre Mim
               </a>
               <a className="transit" href="#my-projects">
-                Portifólio
+                Portfólio
               </a>
               <a className="transit" href="#my-skills">
                 Skills
@@ -201,7 +202,7 @@ export default function App() {
               skill1="Javscript"
               skill2="Babel"
               skill3="Tailwind"
-              imageProject={emBreve}
+              imageProject={todoPrint}
               acess="To Do List"
               linkProject="https://to-do-olive-six.vercel.app/"
             />
@@ -294,10 +295,10 @@ export default function App() {
           </div>
           <div className="social-medias-foot">
             <a href="https://www.linkedin.com/in/wallace-dev/">
-              <img src={linkedinWhite} alt="Social Medias" />
+              <img className="transit" src={linkedinWhite} alt="Social Medias" />
             </a>
             <a href="https://github.com/Wallace027Dev">
-              <img src={githubWhite} alt="Social Medias" />
+              <img className="transit" src={githubWhite} alt="Social Medias" />
             </a>
           </div>
         </footer>
