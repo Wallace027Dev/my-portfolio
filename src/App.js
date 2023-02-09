@@ -39,6 +39,7 @@ import githubWhite from "./images/github-white.svg";
 import cvWallace from "./images/cv-wallace.jpg";
 import authStorage from "./images/projectThumbs/auth-storage.png";
 import todoPrint from "./images/projectThumbs/todoPrint.png";
+import postsApi from "./images/projectThumbs/postsApi.png";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -199,7 +200,7 @@ export default function App() {
             <Project
               projectName="To Do List"
               subtitle="Uma lista de tarefas desenvolvida com JS puro, manipulando o DOM e Eventos(). No projeto foi usado o pré-processador Tailwind para estilização e transpilado com Babel."
-              skill1="Javscript"
+              skill1="Javascript"
               skill2="Babel"
               skill3="Tailwind"
               imageProject={todoPrint}
@@ -207,14 +208,14 @@ export default function App() {
               linkProject="https://to-do-olive-six.vercel.app/"
             />
             <Project
-              projectName="Projeto vazio"
-              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
-              skill1="Typescript"
+              projectName="Media Social"
+              subtitle="Projeto de media social, onde posts são sumbetidos, e, enviados e salvos em uma API. Por enquanto essa API só funciona quando executada em uma aplicação local, como explicado no repositório desse projeto no Github. Mas em breve estou adicionando um banco de dados funcional ao projeto."
+              skill1="Node"
               skill2="React JS"
-              skill3="Tailwind"
-              imageProject={emBreve}
-              acess="Projeto de tal"
-              linkProject="exemploLink"
+              skill3="Fetch API"
+              imageProject={postsApi}
+              acess="Social Media"
+              linkProject="https://consumo-de-api-com-react.vercel.app/"
             />
             <Project
               projectName="Projeto vazio"
