@@ -1,5 +1,7 @@
 <h1  align="center">MY PORTIFOLIO - LANDING PAGE</h1>
 
+<h4 align="center">📌 Building...</h4>
+
 <div align="center">
 <img src="https://img.shields.io/static/v1?label=Projeto&message=Javascript&color=F1E05A&style=for-the-badge&logo=ghost"/>
 </div>
@@ -32,5 +34,3 @@
 
 * Follow me on Linkedin 📢
 * Give the project a star ⭐️
-
-<h4 align="center">📌 Building...</h4>
