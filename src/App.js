@@ -9,29 +9,23 @@ import MyContacts from "./components/MyContacts";
 
 //FUNCÃO DE COPIAR EMAIL
 
+
 export default function App() {
   return (
     <>
       <Nav />
       <main className="center col">
-        {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
         <MainInfo />
         <div className="line"></div>
-        {/* MINHAS EXPERIÊNCIAS */}
         <MyExp />
         <div className="line"></div>
-        {/* SOBRE MIM */}
         <AboutMe />
-        {/* MEUS PROJETOS */}
+        <div className="line"></div>
         <MyProjects />
         <div className="line"></div>
-        {/* MINHAS TECNOLOGIAS */}
         <MySkills />
         <div className="line"></div>
-        {/* CONTATOS */}
         <MyContacts />
-        {/* RODAPÉ */}
-        
       </main>
     </>
   );
