@@ -1,7 +1,6 @@
 import "./styles/App.css";
 import Project from "./components/Project";
 import fotoPerfil from "./images/logo-perfil.svg";
-import logoWallace from "./images/logo-wallace.svg";
 import whatsapp from "./images/Whatsapp.svg";
 import cvDown from "./images/CVDownload.svg";
 import designIcon from "./images/DesignIcon.svg";
@@ -40,6 +39,7 @@ import cvWallace from "./images/cv-wallace.jpg";
 import authStorage from "./images/projectThumbs/auth-storage.png";
 import todoPrint from "./images/projectThumbs/todoPrint.png";
 import postsApi from "./images/projectThumbs/postsApi.png";
+import Nav from "./components/Nav/Nav";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -60,35 +60,7 @@ function devCount() {
 export default function App() {
   return (
     <>
-      <nav className="disappearCellphone">
-        <div className="nav center">
-          <div className="nav-bar">
-            <div>
-              <img src={logoWallace} alt="Perfil Logo" />
-            </div>
-            <div className="navigator">
-              <a className="transit" href="#home">
-                Home
-              </a>
-              <a className="transit" href="#my-exp">
-                Carreira
-              </a>
-              <a className="transit" href="#about-me">
-                Sobre Mim
-              </a>
-              <a className="transit" href="#my-projects">
-                Portfólio
-              </a>
-              <a className="transit" href="#my-skills">
-                Skills
-              </a>
-              <a className="transit" href="#my-contacts">
-                Contato
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Nav />
       <main className="center col">
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
         <section id="home" className="main-info center">
@@ -296,7 +268,11 @@ export default function App() {
           </div>
           <div className="social-medias-foot">
             <a href="https://www.linkedin.com/in/wallace-dev/">
-              <img className="transit" src={linkedinWhite} alt="Social Medias" />
+              <img
+                className="transit"
+                src={linkedinWhite}
+                alt="Social Medias"
+              />
             </a>
             <a href="https://github.com/Wallace027Dev">
               <img className="transit" src={githubWhite} alt="Social Medias" />
