@@ -1,7 +1,6 @@
 import "./styles/App.css";
 import Project from "./components/Project";
 import whatsapp from "./images/Whatsapp.svg";
-import myPhoto from "./images/MyPhoto.jpg";
 import emBreve from "./images/EmBreve.png";
 import react from "./images/React.svg";
 import js from "./images/Javascript.svg";
@@ -33,12 +32,10 @@ import githubWhite from "./images/github-white.svg";
 import authStorage from "./images/projectThumbs/auth-storage.png";
 import todoPrint from "./images/projectThumbs/todoPrint.png";
 import postsApi from "./images/projectThumbs/postsApi.png";
-import Nav from "./components/Nav/Nav";
-import MainInfo from "./components/MainInfo/MainInfo";
-import MyExp from "./components/MyExp/MyExp";
-import devCount from "./utils/devCount";
-
-
+import Nav from "./components/Nav";
+import MainInfo from "./components/MainInfo";
+import MyExp from "./components/MyExp";
+import AboutMe from "./components/AboutMe";
 
 //FUNCÃO DE COPIAR EMAIL
 
@@ -48,39 +45,13 @@ export default function App() {
       <Nav />
       <main className="center col">
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
-				<MainInfo />
+        <MainInfo />
         <div className="line"></div>
         {/* MINHAS EXPERIÊNCIAS */}
-				<MyExp />
+        <MyExp />
         <div className="line"></div>
         {/* SOBRE MIM */}
-        <section id="about-me" className="about-me center">
-          <div className="center col">
-            <img src={myPhoto} alt="Minha foto" />
-            <h3 className="section-bar center disappearTablet">🔗 Portfólio</h3>
-            <h2 className="disappearTablet">Trabalhos e Projetos</h2>
-          </div>
-          <div>
-            <h3 className="section-bar center">🤓 Sobre mim</h3>
-            <h2>Wallace Vieira Dias Castro</h2>
-            <p>👋 Olá mundo!</p>
-            <span className="about-span">
-              <p>
-                👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
-                🎓 Cursando Análise e Desenvolvimento de Sistemas pela{" "}
-                <a href="https://estacio.br/">Estácio</a>
-                <br />
-                💡 Interesse em desenvolvimento Fullstack. <br />
-                ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários,
-                estudar programação e sair com amigos.
-              </p>
-              <p>
-                🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{" "}
-                <i>Marcus Aurélius</i>{" "}
-              </p>
-            </span>
-          </div>
-        </section>
+				<AboutMe />
         {/* MEUS PROJETOS */}
         <section id="my-projects" className="my-projects">
           <div>

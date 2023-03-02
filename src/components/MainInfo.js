@@ -1,9 +1,9 @@
-import cvWallace from "../../images/cv-wallace.jpg";
-import cvDown from "../../images/CVDownload.svg";
-import fotoPerfil from "../../images/logo-perfil.svg";
-import linkedinWhite from "../../images/linkedin.svg";
-import githubWhite from "../../images/github-white.svg";
-import whatsapp from "../../images/Whatsapp.svg";
+import cvWallace from "../images/cv-wallace.jpg";
+import cvDown from "../images/CVDownload.svg";
+import fotoPerfil from "../images/logo-perfil.svg";
+import linkedinWhite from "../images/linkedin.svg";
+import githubWhite from "../images/github-white.svg";
+import whatsapp from "../images/Whatsapp.svg";
 
 export default function MainInfo() {
   return (

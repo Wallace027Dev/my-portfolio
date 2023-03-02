@@ -1,4 +1,4 @@
-import logoWallace from "../../images/logo-wallace.svg";
+import logoWallace from "../images/logo-wallace.svg";
 export default function Nav() {
   return (
     <nav className="disappearCellphone">
