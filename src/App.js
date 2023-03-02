@@ -1,8 +1,4 @@
 import "./styles/App.css";
-import whatsapp from "./images/Whatsapp.svg";
-import copy from "./images/copy.svg";
-import email from "./images/email.svg";
-import arrowUp from "./images/ArrowUp.svg";
 import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
 import Nav from "./components/Nav";
@@ -11,6 +7,7 @@ import MyExp from "./components/MyExp";
 import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
 import MySkills from "./components/MySkills";
+import MyContacts from "./components/MyContacts";
 
 //FUNCÃO DE COPIAR EMAIL
 
@@ -34,25 +31,7 @@ export default function App() {
         <MySkills />
         <div className="line"></div>
         {/* CONTATOS */}
-        <section id="my-contacts" className="my-contacts center">
-          <h3 className="section-bar center">📬 Contatos</h3>
-          <h2>Vamos conversar!</h2>
-          <div className="link-contacts center">
-            <img className="transit" src={whatsapp} alt="Meu whatsapp" />
-            <div>
-              <img className="email-image" src={email} alt="Meu email" />
-              <p>wallaceofc@hotmail.com</p>
-              <img
-                className="copy-image transit"
-                src={copy}
-                alt="Ícone de copiar"
-              />
-            </div>
-          </div>
-          <a href="#">
-            Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{" "}
-          </a>
-        </section>
+        <MyContacts />
         {/* RODAPÉ */}
         <footer className="center">
           <div className="foot">
