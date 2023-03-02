@@ -1,6 +1,4 @@
 import "./styles/App.css";
-import linkedinWhite from "./images/linkedin.svg";
-import githubWhite from "./images/github-white.svg";
 import Nav from "./components/Nav";
 import MainInfo from "./components/MainInfo";
 import MyExp from "./components/MyExp";
@@ -33,28 +31,7 @@ export default function App() {
         {/* CONTATOS */}
         <MyContacts />
         {/* RODAPÉ */}
-        <footer className="center">
-          <div className="foot">
-            <p>
-              Feito por{" "}
-              <a href="https://www.linkedin.com/in/wallace-dev/">
-                Wallace Vieira
-              </a>{" "}
-            </p>
-          </div>
-          <div className="social-medias-foot">
-            <a href="https://www.linkedin.com/in/wallace-dev/">
-              <img
-                className="transit"
-                src={linkedinWhite}
-                alt="Social Medias"
-              />
-            </a>
-            <a href="https://github.com/Wallace027Dev">
-              <img className="transit" src={githubWhite} alt="Social Medias" />
-            </a>
-          </div>
-        </footer>
+        
       </main>
     </>
   );
