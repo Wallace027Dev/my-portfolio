@@ -1,8 +1,6 @@
 import "./styles/App.css";
 import Project from "./components/Project";
-import fotoPerfil from "./images/logo-perfil.svg";
 import whatsapp from "./images/Whatsapp.svg";
-import cvDown from "./images/CVDownload.svg";
 import designIcon from "./images/DesignIcon.svg";
 import projectIcons from "./images/ProjectsIcon.svg";
 import codeIcon from "./images/CodeIcon.svg";
@@ -35,11 +33,11 @@ import email from "./images/email.svg";
 import arrowUp from "./images/ArrowUp.svg";
 import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
-import cvWallace from "./images/cv-wallace.jpg";
 import authStorage from "./images/projectThumbs/auth-storage.png";
 import todoPrint from "./images/projectThumbs/todoPrint.png";
 import postsApi from "./images/projectThumbs/postsApi.png";
 import Nav from "./components/Nav/Nav";
+import MainInfo from "./components/MainInfo/MainInfo";
 
 //CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
 function devCount() {
@@ -63,45 +61,7 @@ export default function App() {
       <Nav />
       <main className="center col">
         {/* MINHAS INFORMAÇÕES PRINCIPAIS */}
-        <section id="home" className="main-info center">
-          <div className="my-info">
-            <h2 className="section-bar center">👋 Saudações!</h2>
-            <h1>
-              Wallace <br />
-              Vieira
-            </h1>
-            <p>Fullstack developer</p>
-            <a href="https://www.linkedin.com/in/wallace-dev/">
-              <img
-                className="transit"
-                src={linkedinWhite}
-                alt="Social Medias"
-              />
-            </a>
-            <a href="https://github.com/Wallace027Dev">
-              <img className="transit" src={githubWhite} alt="Social Medias" />
-            </a>
-          </div>
-          <div>
-            <img className="my-paint" src={fotoPerfil} alt="Perfil Photo" />
-          </div>
-          <div className="my-cv">
-            <a href={cvWallace} download="CV-Wallace">
-              <img
-                className="cvDown transit"
-                src={cvDown}
-                alt="Download my CV"
-              />
-            </a>
-            <a href="https://wa.me/qr/YWSCEX37OD3QH1">
-              <img
-                className="whatsapp transit"
-                src={whatsapp}
-                alt="Tell me in whatsapp"
-              />
-            </a>
-          </div>
-        </section>
+				<MainInfo />
         <div className="line"></div>
         {/* MINHAS EXPERIÊNCIAS */}
         <section id="my-exp" className="my-exp">
