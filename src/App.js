@@ -1,9 +1,6 @@
 import "./styles/App.css";
 import Project from "./components/Project";
 import whatsapp from "./images/Whatsapp.svg";
-import designIcon from "./images/DesignIcon.svg";
-import projectIcons from "./images/ProjectsIcon.svg";
-import codeIcon from "./images/CodeIcon.svg";
 import myPhoto from "./images/MyPhoto.jpg";
 import emBreve from "./images/EmBreve.png";
 import react from "./images/React.svg";
@@ -38,20 +35,10 @@ import todoPrint from "./images/projectThumbs/todoPrint.png";
 import postsApi from "./images/projectThumbs/postsApi.png";
 import Nav from "./components/Nav/Nav";
 import MainInfo from "./components/MainInfo/MainInfo";
+import MyExp from "./components/MyExp/MyExp";
+import devCount from "./utils/devCount";
 
-//CALCULADOR DE TEMPO QUE ESTUDO PROGRAMAÇÃO
-function devCount() {
-  const today = new Date();
-  const startDev = new Date("2020/09/23");
-  let age = today.getFullYear() - startDev.getFullYear();
-  const mon = today.getMonth() - startDev.getMonth();
 
-  if (mon < 0 || (mon === 0 && today.getDate() < startDev.getDate())) {
-    age--;
-  }
-
-  return age;
-}
 
 //FUNCÃO DE COPIAR EMAIL
 
@@ -64,29 +51,7 @@ export default function App() {
 				<MainInfo />
         <div className="line"></div>
         {/* MINHAS EXPERIÊNCIAS */}
-        <section id="my-exp" className="my-exp">
-          <span className="exp-span center">
-            <div>
-              <img src={codeIcon} alt="Ícone de código" />
-              <p>{devCount()} anos estudando</p>
-              <h2>Programação</h2>
-            </div>
-            <div>
-              <img src={projectIcons} alt="Ícone de Gráficos" />
-              <p>Planejando transição de</p>
-              <h2>Carreira</h2>
-            </div>
-            <div>
-              <img src={designIcon} alt="Ícone de design" />
-              <p>Análise e Desenvolvimento de</p>
-              <h2>Sistemas</h2>
-            </div>
-          </span>
-          <div className="my-job center">
-            <p>DESENVOLVEDOR</p>
-            <h2>FULLSTACK</h2>
-          </div>
-        </section>
+				<MyExp />
         <div className="line"></div>
         {/* SOBRE MIM */}
         <section id="about-me" className="about-me center">
