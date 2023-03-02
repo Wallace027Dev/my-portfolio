@@ -1,7 +1,5 @@
 import "./styles/App.css";
-import Project from "./components/Project";
 import whatsapp from "./images/Whatsapp.svg";
-import emBreve from "./images/EmBreve.png";
 import react from "./images/React.svg";
 import js from "./images/Javascript.svg";
 import html from "./images/HTML5.svg";
@@ -29,13 +27,11 @@ import email from "./images/email.svg";
 import arrowUp from "./images/ArrowUp.svg";
 import linkedinWhite from "./images/linkedin.svg";
 import githubWhite from "./images/github-white.svg";
-import authStorage from "./images/projectThumbs/auth-storage.png";
-import todoPrint from "./images/projectThumbs/todoPrint.png";
-import postsApi from "./images/projectThumbs/postsApi.png";
 import Nav from "./components/Nav";
 import MainInfo from "./components/MainInfo";
 import MyExp from "./components/MyExp";
 import AboutMe from "./components/AboutMe";
+import MyProjects from "./components/MyProjects";
 
 //FUNCÃO DE COPIAR EMAIL
 
@@ -51,52 +47,9 @@ export default function App() {
         <MyExp />
         <div className="line"></div>
         {/* SOBRE MIM */}
-				<AboutMe />
+        <AboutMe />
         {/* MEUS PROJETOS */}
-        <section id="my-projects" className="my-projects">
-          <div>
-            <Project
-              projectName="Autenticação e Armazenamento"
-              subtitle="Nesse projeto foi usado React, Routers e Firebase. Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
-              skill1="Firebase"
-              skill2="React JS"
-              skill3="Javascript"
-              imageProject={authStorage}
-              acess="Autenticação e Armazenamento"
-              linkProject="https://autenticacao-e-armazenamento-react.vercel.app/login"
-            />
-            <Project
-              projectName="To Do List"
-              subtitle="Uma lista de tarefas desenvolvida com JS puro, manipulando o DOM e Eventos(). No projeto foi usado o pré-processador Tailwind para estilização e transpilado com Babel."
-              skill1="Javascript"
-              skill2="Babel"
-              skill3="Tailwind"
-              imageProject={todoPrint}
-              acess="To Do List"
-              linkProject="https://to-do-olive-six.vercel.app/"
-            />
-            <Project
-              projectName="Media Social"
-              subtitle="Projeto de media social, onde posts são sumbetidos, e, enviados e salvos em uma API. Por enquanto essa API só funciona quando executada em uma aplicação local, como explicado no repositório desse projeto no Github. Mas em breve estou adicionando um banco de dados funcional ao projeto."
-              skill1="Node"
-              skill2="React JS"
-              skill3="Fetch API"
-              imageProject={postsApi}
-              acess="Social Media"
-              linkProject="https://consumo-de-api-com-react.vercel.app/"
-            />
-            <Project
-              projectName="Projeto vazio"
-              subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
-              skill1="Typescript"
-              skill2="React JS"
-              skill3="Tailwind"
-              imageProject={emBreve}
-              acess="Projeto de tal"
-              linkProject="exemploLink"
-            />
-          </div>
-        </section>
+        <MyProjects />
         <div className="line"></div>
         {/* MINHAS TECNOLOGIAS */}
         <section id="my-skills" className="my-skills center">

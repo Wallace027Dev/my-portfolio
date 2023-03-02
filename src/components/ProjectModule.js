@@ -1,6 +1,6 @@
 import "../styles/Project.css";
 
-export default function Project(props) {
+export default function ProjectModule(props) {
   return (
     <>
       <a href={props.linkProject}>
