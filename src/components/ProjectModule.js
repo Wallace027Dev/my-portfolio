@@ -4,7 +4,7 @@ const Project = styled.div`
   .container {
     width: 22.5rem;
     height: 28.75rem;
-    border: 1px solid var(--purple);
+    border: 1px solid var(--primary);
     border-radius: 1rem;
     padding: 1.6rem 1.6rem;
     display: flex;
@@ -12,7 +12,7 @@ const Project = styled.div`
     justify-content: space-between;
     p {
       font-size: 0.875rem;
-      color: var(--gray);
+      color: var(--tertiary);
     }
     img {
       width: 22rem;
@@ -29,7 +29,7 @@ const Project = styled.div`
       :hover,
       :focus {
         transform: translateX(-1px) scale(1.1);
-        background-color: var(--dark-purple);
+        background-color: var(--secondary);
       }
     }
     .cont-skills {
@@ -38,11 +38,11 @@ const Project = styled.div`
       justify-content: space-between;
       padding-bottom: 1.5rem;
       h4 {
-        background-color: var(--dark-purple);
+        background-color: var(--secondary);
         width: 6.625rem;
         height: 1.875rem;
         border-radius: 0.5rem;
-        color: var(--purple);
+        color: var(--primary);
         font-weight: 700;
         font-size: 1rem;
         display: flex;
@@ -50,18 +50,6 @@ const Project = styled.div`
         align-items: center;
         margin-right: 0.5rem;
       }
-    }
-  }
-  @media (max-width: 425px) {
-    .container {
-      width: 16rem;
-      height: 28rem;
-      padding: 1.2rem 1.2rem;
-    }
-		img {
-      width: 16rem;
-      height: 9rem;
-      border-radius: 0.5rem;
     }
   }
 `;
