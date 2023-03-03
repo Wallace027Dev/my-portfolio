@@ -198,27 +198,6 @@ a {
   grid-row-gap: 3rem;
 }
 
-.my-skills {
-  flex-direction: column;
-}
-
-.my-skills h2 {
-  font-weight: 800;
-  font-size: 3rem;
-  margin-bottom: 6.25rem;
-}
-
-.my-skills p {
-  font-size: 1.5rem;
-  color: var(--tertiary);
-  margin-bottom: 2.5rem;
-}
-
-.my-skills img {
-  margin-right: 2rem;
-  margin-bottom: 2.75rem;
-}
-
 .my-contacts {
   flex-direction: column;
 }
