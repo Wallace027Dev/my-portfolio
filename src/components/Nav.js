@@ -1,8 +1,33 @@
 import logoWallace from "../images/logo-wallace.svg";
+import styled from "styled-components";
+
+const NavBar = styled.nav`
+  .nav-bar {
+    background-color: var(--secondary);
+    width: 90%;
+    height: 4rem;
+    margin-top: 2.375rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    .navigator {
+      display: flex;
+      a {
+        margin: auto 0.75rem;
+        color: var(--tertiary);
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+`;
+
 export default function Nav() {
   return (
-    <nav className="disappearCellphone">
-      <div className="nav center">
+    <NavBar>
+      <div className="center">
         <div className="nav-bar">
           <div>
             <img src={logoWallace} alt="Perfil Logo" />
@@ -29,6 +54,6 @@ export default function Nav() {
           </div>
         </div>
       </div>
-    </nav>
+    </NavBar>
   );
 }
