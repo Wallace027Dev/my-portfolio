@@ -58,8 +58,7 @@ const Project = styled.div`
       height: 28rem;
       padding: 1.2rem 1.2rem;
     }
-
-    .container img {
+		img {
       width: 16rem;
       height: 9rem;
       border-radius: 0.5rem;

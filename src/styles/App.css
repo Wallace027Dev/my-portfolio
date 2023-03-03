@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-
 :root {
-  --dark-color: #090e16;
-  --rose: #c83267;
-  --purple: #7b4ae2;
-  --white: #ffffff;
-  --dark-purple: rgba(123, 74, 226, 0.1);
-  --gray: rgba(255, 255, 255, 0.5);
+  --bg-color: #090e16;
+  --font-color: #fff;
+  --primary: #7b4ae2;
+  --secondary: rgba(123, 74, 226, 0.1);
+  --tertiary: rgba(255, 255, 255, 0.5);
 }
 
 .center {
@@ -27,7 +25,7 @@
 .transit:hover,
 .transit:focus {
   transform: translateY(-1px) scale(1.1);
-  color: var(--purple);
+  color: var(--primary);
 }
 
 * {
@@ -37,8 +35,8 @@
 }
 
 html {
-  background-color: var(--dark-color);
-  color: var(--white);
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -49,16 +47,16 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--dark-purple);
+  background-color: var(--secondary);
 }
 
 a {
   font-weight: 600;
-  color: var(--white);
+  color: var(--font-color);
 }
 
 .nav-bar {
-  background-color: var(--dark-purple);
+  background-color: var(--secondary);
   width: 90%;
   height: 4rem;
   margin-top: 2.375rem;
@@ -70,11 +68,11 @@ a {
 }
 
 .section-bar {
-  background-color: var(--dark-purple);
+  background-color: var(--secondary);
   width: 15rem;
   height: 3rem;
   border-radius: 1rem;
-  color: var(--purple);
+  color: var(--primary);
   font-weight: 700;
   font-size: 1.15rem;
   margin-bottom: 1.5rem;
@@ -84,7 +82,7 @@ a {
 .line {
   width: 90%;
   height: 1px;
-  background-color: var(--dark-purple);
+  background-color: var(--secondary);
   margin: 8rem 0;
 }
 
@@ -94,7 +92,7 @@ a {
 
 .navigator a {
   margin-left: 1.5rem;
-  color: var(--gray);
+  color: var(--tertiary);
   font-weight: 400;
   cursor: pointer;
 }
@@ -115,7 +113,7 @@ a {
 }
 
 .my-info p {
-  color: var(--gray);
+  color: var(--tertiary);
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -154,7 +152,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid var(--purple);
+  border: 1px solid var(--primary);
   border-radius: 1rem;
   width: 15rem;
   height: 12.5rem;
@@ -172,8 +170,8 @@ a {
   margin-top: 2rem;
   width: 56.25rem;
   height: 5rem;
-  color: var(--purple);
-  background-color: var(--dark-purple);
+  color: var(--primary);
+  background-color: var(--secondary);
   border-radius: 1rem;
   flex-direction: column;
 }
@@ -191,7 +189,7 @@ a {
   width: 28.125rem;
   height: 28.125rem;
   border-radius: 20rem;
-  border: var(--white) solid 0.5rem;
+  border: var(--font-color) solid 0.5rem;
   margin-bottom: 2rem;
 }
 
@@ -204,12 +202,12 @@ a {
 .about-me p {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
-  color: var(--gray);
+  color: var(--tertiary);
   max-width: 56.25rem;
 }
 
 .about-me a {
-  color: var(--gray);
+  color: var(--tertiary);
 }
 
 .my-projects {
@@ -235,7 +233,7 @@ a {
 
 .my-skills p {
   font-size: 1.5rem;
-  color: var(--gray);
+  color: var(--tertiary);
   margin-bottom: 2.5rem;
 }
 
@@ -257,7 +255,7 @@ a {
 .my-contacts a {
   font-weight: 600;
   font-size: 1.25rem;
-  color: var(--purple);
+  color: var(--primary);
   display: flex;
   align-items: center;
   margin-bottom: 12.5rem;
@@ -266,7 +264,7 @@ a {
 .link-contacts {
   flex-direction: row;
   font-size: 1.25rem;
-  color: var(--gray);
+  color: var(--tertiary);
 }
 
 .link-contacts > img {
@@ -290,11 +288,11 @@ a {
 .copy-image {
   height: 2rem;
   margin-top: 1.5rem;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 footer {
-  background-color: var(--dark-purple);
+  background-color: var(--secondary);
   height: 5.5rem;
   width: 100%;
   flex-direction: row;
@@ -303,7 +301,7 @@ footer {
 
 .foot a {
   font-weight: 700;
-  color: var(--purple);
+  color: var(--primary);
 }
 
 .social-medias-foot img {
@@ -472,12 +470,12 @@ footer {
 
   .navigator a {
     margin-left: 0rem;
-		font-size: 0rem;
+    font-size: 0rem;
   }
 
-	.nav-bar img {
-		height: 0rem;
-	}
+  .nav-bar img {
+    height: 0rem;
+  }
 
   .my-paint {
     height: 20rem;
