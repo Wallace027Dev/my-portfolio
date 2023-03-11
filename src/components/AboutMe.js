@@ -1,11 +1,41 @@
 import devCount from "../utils/devCount";
 import myPhoto from "../images/MyPhoto.jpg";
+import styled from "styled-components";
+
+const AboutStyle = styled.section`
+  flex-direction: row;
+  gap: 10%;
+
+	.about-me {
+		.img {
+			width: 28.125rem;
+			height: 28.125rem;
+			border-radius: 20rem;
+			border: var(--font-color) solid 0.5rem;
+			margin-bottom: 2rem;
+		}
+		h2 {
+			font-weight: 800;
+			font-size: 3rem;
+			margin: 1.5rem 0;
+		}
+		p {
+			font-size: 1.125rem;
+			margin-bottom: 1.5rem;
+			color: var(--tertiary);
+			max-width: 56.25rem;
+		}
+		a {
+			color: var(--tertiary);
+		}
+	}
+`
 
 export default function AboutMe() {
 	return (
-		<section id="about-me" className="about-me center">
+		<AboutStyle id="about-me" className="about-me center">
 		<div className="center col">
-			<img src={myPhoto} alt="Minha foto" />
+			<img className="img" src={myPhoto} alt="Minha foto" />
 			<h3 className="section-bar center disappearTablet">🔗 Portfólio</h3>
 			<h2 className="disappearTablet">Trabalhos e Projetos</h2>
 		</div>
@@ -29,6 +59,6 @@ export default function AboutMe() {
 				</p>
 			</span>
 		</div>
-	</section>
+	</AboutStyle>
 	)
 }

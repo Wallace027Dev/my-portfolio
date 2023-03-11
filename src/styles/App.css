@@ -116,36 +116,6 @@ a {
   width: 12.25rem;
 }
 
-.about-me {
-  flex-direction: row;
-  gap: 10%;
-}
-
-.about-me img {
-  width: 28.125rem;
-  height: 28.125rem;
-  border-radius: 20rem;
-  border: var(--font-color) solid 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.about-me h2 {
-  font-weight: 800;
-  font-size: 3rem;
-  margin: 1.5rem 0;
-}
-
-.about-me p {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-  color: var(--tertiary);
-  max-width: 56.25rem;
-}
-
-.about-me a {
-  color: var(--tertiary);
-}
-
 
 
 .my-contacts {
