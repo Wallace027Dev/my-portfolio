@@ -116,47 +116,6 @@ a {
   width: 12.25rem;
 }
 
-.my-exp {
-  flex-direction: column;
-}
-
-.exp-span {
-  gap: 5rem;
-}
-
-.exp-span div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid var(--primary);
-  border-radius: 1rem;
-  width: 15rem;
-  height: 12.5rem;
-}
-
-.my-exp p {
-  font-size: 1rem;
-}
-
-.my-exp h2 {
-  font-size: 2rem;
-}
-
-.my-job {
-  margin-top: 2rem;
-  width: 56.25rem;
-  height: 5rem;
-  color: var(--primary);
-  background-color: var(--secondary);
-  border-radius: 1rem;
-  flex-direction: column;
-}
-
-.my-job h2 {
-  letter-spacing: 1rem;
-}
-
 .about-me {
   flex-direction: row;
   gap: 10%;
@@ -187,16 +146,7 @@ a {
   color: var(--tertiary);
 }
 
-.my-projects {
-  margin-top: 6.25rem;
-}
 
-.my-projects > div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-}
 
 .my-contacts {
   flex-direction: column;
