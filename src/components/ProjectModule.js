@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Project = styled.div`
   .container {
+    margin: 1rem 2rem;
     width: 22.5rem;
     height: 28.75rem;
     border: 1px solid var(--primary);
@@ -45,9 +46,6 @@ const Project = styled.div`
         color: var(--primary);
         font-weight: 700;
         font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-right: 0.5rem;
       }
     }
@@ -65,9 +63,9 @@ export default function ProjectModule(props) {
           </div>
           <div>
             <div className="cont-skills">
-              <h4>{props.skill1}</h4>
-              <h4>{props.skill2}</h4>
-              <h4>{props.skill3}</h4>
+              <h4 className="center">{props.skill1}</h4>
+              <h4 className="center">{props.skill2}</h4>
+              <h4 className="center">{props.skill3}</h4>
             </div>
             <img src={props.imageProject} alt={props.acess} />
           </div>

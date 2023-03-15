@@ -25,7 +25,7 @@ import styled from "styled-components";
 const Skills = styled.section`
   .my-skills {
     text-align: center;
-		flex-direction: column;
+    flex-direction: column;
     h2 {
       font-weight: 800;
       font-size: 3rem;
@@ -47,7 +47,7 @@ export default function MySkills() {
   return (
     <Skills>
       <div id="my-skills" className="my-skills center">
-        <h3 className="section-bar">🧑‍💻 Skills · Experiências</h3>
+        <h3 className="section-bar center">🧑‍💻 Skills · Experiências</h3>
         <h2>Tecnologias e habilidades</h2>
         <p>Techs que uso no dia a dia</p>
         <div>
