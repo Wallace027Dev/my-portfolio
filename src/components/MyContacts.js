@@ -4,7 +4,6 @@ import email from "../images/email.svg";
 import arrowUp from "../images/ArrowUp.svg";
 import styled from "styled-components";
 
-export default function MyContacts() {
   const Contacts = styled.section`
     flex-direction: column;
     h2 {
@@ -44,6 +43,8 @@ export default function MyContacts() {
     }
   `;
 
+export default function MyContacts() {
+	
   return (
     <Contacts id="my-contacts" className="center">
       <h3 className="section-bar center">📬 Contatos</h3>
