@@ -116,57 +116,6 @@ a {
   width: 12.25rem;
 }
 
-
-
-.my-contacts {
-  flex-direction: column;
-}
-
-.my-contacts h2 {
-  font-weight: 800;
-  font-size: 3rem;
-  margin-bottom: 4rem;
-}
-
-.my-contacts a {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  margin-bottom: 12.5rem;
-}
-
-.link-contacts {
-  flex-direction: row;
-  font-size: 1.25rem;
-  color: var(--tertiary);
-}
-
-.link-contacts > img {
-  height: 3.75rem;
-  margin-right: 2.5rem;
-  cursor: pointer;
-}
-
-.link-contacts div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.email-image {
-  height: 4.5rem;
-  margin-bottom: 0.25rem;
-}
-
-.copy-image {
-  height: 2rem;
-  margin-top: 1.5rem;
-  cursor: pointer;
-}
-
 footer {
   background-color: var(--secondary);
   height: 5.5rem;

@@ -23,7 +23,7 @@ export default function MainInfo() {
         </a>
       </div>
       <div>
-        <img className="my-paint" src={fotoPerfil} alt="Perfil Photo" />
+        <img className="my-paint" src={fotoPerfil} alt="Wallace" />
       </div>
       <div className="my-cv">
         <a href={cvWallace} download="CV-Wallace">

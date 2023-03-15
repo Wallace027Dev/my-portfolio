@@ -6,14 +6,14 @@ const AboutStyle = styled.section`
   flex-direction: row;
   gap: 10%;
 
+	.img {
+		width: 28.125rem;
+		height: 28.125rem;
+		border-radius: 20rem;
+		border: var(--font-color) solid 0.5rem;
+		margin-bottom: 2rem;
+	}
 	.about-me {
-		.img {
-			width: 28.125rem;
-			height: 28.125rem;
-			border-radius: 20rem;
-			border: var(--font-color) solid 0.5rem;
-			margin-bottom: 2rem;
-		}
 		h2 {
 			font-weight: 800;
 			font-size: 3rem;
