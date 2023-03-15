@@ -116,20 +116,6 @@ a {
   width: 12.25rem;
 }
 
-footer {
-  background-color: var(--secondary);
-  height: 5.5rem;
-  width: 100%;
-  flex-direction: row;
-  gap: 5rem;
-}
 
-.foot a {
-  font-weight: 700;
-  color: var(--primary);
-}
 
-.social-medias-foot img {
-  margin: 0 1.25rem;
-  height: 2rem;
-}
+

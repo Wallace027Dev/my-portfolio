@@ -6,9 +6,9 @@ import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
 import MySkills from "./components/MySkills";
 import MyContacts from "./components/MyContacts";
+import Footer from "./components/Footer";
 
 //FUNCÃO DE COPIAR EMAIL
-
 
 export default function App() {
   return (
@@ -26,6 +26,7 @@ export default function App() {
         <MySkills />
         <div className="line"></div>
         <MyContacts />
+        <Footer />
       </main>
     </>
   );

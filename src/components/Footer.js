@@ -1,9 +1,26 @@
 import linkedinWhite from "../images/linkedin.svg";
 import githubWhite from "../images/github-white.svg";
+import styled from "styled-components";
+
+const Foot = styled.footer`
+  background-color: var(--secondary);
+  height: 5.5rem;
+  width: 100%;
+  flex-direction: row;
+  gap: 5rem;
+  .foot a {
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .social-medias-foot img {
+    margin: 0 1.25rem;
+    height: 2rem;
+  }
+`;
 
 export default function Footer() {
   return (
-    <footer className="center">
+    <Foot className="center">
       <div className="foot">
         <p>
           Feito por{" "}
@@ -18,6 +35,6 @@ export default function Footer() {
           <img className="transit" src={githubWhite} alt="Social Medias" />
         </a>
       </div>
-    </footer>
+    </Foot>
   );
 }
