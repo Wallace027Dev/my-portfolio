@@ -1,8 +1,9 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const Project = styled.div`
   .container {
-    margin: 1rem 2rem;
+    margin: 1rem;
     width: 22.5rem;
     height: 28.75rem;
     border: 1px solid var(--primary);
@@ -15,9 +16,10 @@ const Project = styled.div`
       font-size: 0.875rem;
       color: var(--tertiary);
     }
-    img {
+    img,
+    video {
       width: 22rem;
-      height: 14rem;
+      height: 12.5rem;
       border-radius: 0.5rem;
     }
     h3 {
@@ -53,6 +55,16 @@ const Project = styled.div`
 `;
 
 export default function ProjectModule(props) {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowVideo(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowVideo(false);
+  };
+
   return (
     <Project>
       <a href={props.linkProject}>
@@ -67,7 +79,27 @@ export default function ProjectModule(props) {
               <h4 className="center">{props.skill2}</h4>
               <h4 className="center">{props.skill3}</h4>
             </div>
-            <img src={props.imageProject} alt={props.acess} />
+            <div
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              {showVideo ? (
+                <video
+                  src={props.videoProj}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  autoPlay
+                  muted
+                />
+              ) : (
+                <img
+                  src={props.imageProject}
+                  alt={props.acess}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              )}
+            </div>
           </div>
         </div>
       </a>

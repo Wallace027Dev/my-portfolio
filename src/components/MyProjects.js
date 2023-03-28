@@ -1,8 +1,13 @@
 import authStorage from "../images/projectThumbs/auth-storage.png";
+import authVideo from "../videos/authVideo.mp4";
 import todoPrint from "../images/projectThumbs/todoPrint.png";
+import todoVideo from "../videos/todoVideo.mp4";
 import postsApi from "../images/projectThumbs/postsApi.png";
+import socialVideo from "../videos/socialVideo.mp4";
+import staartClone from "../images/projectThumbs/staartClone.png";
+import staartVideo from "../videos/staartVideo.mp4";
+
 import ProjectModule from "../components/ProjectModule";
-import emBreve from "../images/EmBreve.png";
 import styled from "styled-components";
 
 const Projects = styled.section`
@@ -10,7 +15,7 @@ const Projects = styled.section`
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  width: 90rem;
+  width: 83rem;
   ::-webkit-scrollbar {
     width: 12px;
   }
@@ -40,6 +45,7 @@ export default function MyProjects() {
         skill2="React JS"
         skill3="Javascript"
         imageProject={authStorage}
+        videoProj={authVideo}
         acess="Autenticação e Armazenamento"
         linkProject="https://autenticacao-e-armazenamento-react.vercel.app/login"
       />
@@ -51,6 +57,7 @@ export default function MyProjects() {
         skill2="Babel"
         skill3="Tailwind"
         imageProject={todoPrint}
+        videoProj={todoVideo}
         acess="To Do List"
         linkProject="https://to-do-olive-six.vercel.app/"
       />
@@ -62,17 +69,22 @@ export default function MyProjects() {
         skill2="React JS"
         skill3="Fetch API"
         imageProject={postsApi}
+        videoProj={socialVideo}
         acess="Social Media"
         linkProject="https://consumo-de-api-com-react.vercel.app/"
       />
       <ProjectModule
         className="carrossel-item"
-        projectName="Projeto vazio"
-        subtitle=" Descrição do meu projeto futuro. Aqui vai ser colocado meu exemplo."
-        skill1="Typescript"
-        skill2="React JS"
-        skill3="Tailwind"
-        imageProject={emBreve}
+        projectName="Plataforma de Cursos"
+        subtitle="Projeto final da Staart, onde a proposta era fazer uma plataforma de cursos,
+				criando um design do zero e consumindo uma api com as informações dos cursos.
+				Foi usado React, styled-components, axios, react router, e mais.
+				"
+        skill1="React JS"
+        skill2="Axios"
+        skill3="Styled-comp"
+        imageProject={staartClone}
+        videoProj={staartVideo}
         acess="Projeto de tal"
         linkProject="exemploLink"
       />

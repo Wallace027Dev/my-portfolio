@@ -51,31 +51,31 @@ export default function MySkills() {
         <h2>Tecnologias e habilidades</h2>
         <p>Techs que uso no dia a dia</p>
         <div>
-          <img className="transit" src={html} alt="HMTL Image" />
-          <img className="transit" src={css} alt="CSS Image" />
-          <img className="transit" src={js} alt=" Javascript Image" />
-          <img className="transit" src={react} alt="React Image" />
-          <img className="transit" src={node} alt="Node Image" />
-          <img className="transit" src={tailwind} alt="Tailwind Image" />
-          <img className="transit" src={github} alt="Github Image" />
-          <img className="transit" src={git} alt="Git Image" />
-          <img className="transit" src={npm} alt="NPM Image" />
-          <img className="transit" src={vercel} alt="Vercel Image" />
-          <img className="transit" src={firebase} alt="Firebase" />
+          <img className="transit" src={js} alt=" Javascript" />
+          <img className="transit" src={ts} alt="Typescript" />
+          <img className="transit" src={react} alt="React" />
+          <img className="transit" src={node} alt="Node" />
+          <img className="transit" src={html} alt="HMTL" />
+          <img className="transit" src={css} alt="CSS" />
+          <img className="transit" src={github} alt="Github" />
+          <img className="transit" src={git} alt="Git" />
+          <img className="transit" src={npm} alt="NPM" />
+          <img className="transit" src={vercel} alt="Vercel" />
+          <img className="transit" src={docker} alt="Docker" />
         </div>
         <p>Outras techs que já tive experiência</p>
         <div>
-          <img className="transit" src={sass} alt="Sass Image" />
-          <img className="transit" src={mysql} alt="MySQL Image" />
-          <img className="transit" src={python} alt="Python Image" />
-          <img className="transit" src={ts} alt="Typescript Image" />
-          <img className="transit" src={java} alt="Java Image" />
-          <img className="transit" src={c} alt="C Image" />
-          <img className="transit" src={php} alt="PHP Image" />
-          <img className="transit" src={docker} alt="Docker Image" />
-          <img className="transit" src={postcss} alt="PostCSS Image" />
-          <img className="transit" src={babel} alt="Babel Image" />
-          <img className="transit" src={webpack} alt="Webpack Image" />
+          <img className="transit" src={mysql} alt="MySQL" />
+          <img className="transit" src={tailwind} alt="Tailwind" />
+          <img className="transit" src={postcss} alt="PostCSS" />
+          <img className="transit" src={sass} alt="Sass" />
+          <img className="transit" src={babel} alt="Babel" />
+          <img className="transit" src={webpack} alt="Webpack" />
+          <img className="transit" src={firebase} alt="Firebase" />
+          <img className="transit" src={python} alt="Python" />
+          <img className="transit" src={java} alt="Java" />
+          <img className="transit" src={c} alt="C" />
+          <img className="transit" src={php} alt="PHP" />
         </div>
       </div>
     </Skills>
