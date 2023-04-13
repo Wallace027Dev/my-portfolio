@@ -16,21 +16,39 @@ const Projects = styled.section`
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 83rem;
+
+  @media screen and (max-width: 1366px) {
+    width: 56rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: none;
+  }
+
   ::-webkit-scrollbar {
     width: 12px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: var(--secondary);
   }
+
   .carrossel-item {
     width: 22.5rem;
     flex: 0 0 22.5rem;
-    height: 100px;
+    height: 28.75rem;
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      margin-right: 1rem;
+    }
   }
 `;
 

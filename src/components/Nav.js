@@ -12,6 +12,7 @@ const NavBar = styled.nav`
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+
     .navigator {
       display: flex;
       a {
@@ -19,6 +20,16 @@ const NavBar = styled.nav`
         color: var(--tertiary);
         font-weight: 400;
         cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+      width: 100%;
+      padding: 0 0.75rem;
+      .navigator {
+        display: none;
       }
     }
   }
@@ -51,6 +62,11 @@ export default function Nav() {
             <a className="transit" href="#my-contacts">
               Contato
             </a>
+          </div>
+          <div>
+            TOGGLET
+            <br />
+            THEME
           </div>
         </div>
       </div>

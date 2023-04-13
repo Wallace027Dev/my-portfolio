@@ -6,17 +6,28 @@ const Foot = styled.footer`
   background-color: var(--secondary);
   height: 5.5rem;
   width: 100%;
-  flex-direction: row;
-  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   .foot a {
     font-weight: 700;
     color: var(--primary);
   }
+  
   .social-medias-foot img {
     margin: 0 1.25rem;
     height: 2rem;
   }
+  
+  @media only screen and (max-width: 768px) {
+    height: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
 `;
+
 
 export default function Footer() {
   return (

@@ -41,6 +41,23 @@ const Skills = styled.section`
       margin-bottom: 2.75rem;
     }
   }
+
+	@media (max-width: 768px) {
+    .my-skills {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 3.125rem;
+      }
+      p {
+        font-size: 1.25rem;
+        margin-bottom: 1.875rem;
+      }
+      img {
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 `;
 
 export default function MySkills() {
