@@ -64,9 +64,12 @@ const Exp = styled.section`
     .exp-span {
       flex-direction: row;
       justify-content: space-between;
+			gap: 1rem;
 
       div {
         max-width: unset;
+				width: 12rem;
+        height: 12rem;
       }
     }
   }

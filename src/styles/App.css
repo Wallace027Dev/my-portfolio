@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-:root {
-  --bg-color: #090e16;
-  --font-color: #fff;
-  --primary: #7b4ae2;
-  --secondary: rgba(123, 74, 226, 0.1);
-  --tertiary: rgba(255, 255, 255, 0.5);
-}
-
 .center {
   display: flex;
   align-items: center;

@@ -55,6 +55,25 @@ const Skills = styled.section`
       img {
         margin-right: 1rem;
         margin-bottom: 2rem;
+				height: 2.5rem;
+      }
+    }
+  }
+
+	@media (max-width: 425px) {
+    .my-skills {
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 3.125rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.875rem;
+      }
+      img {
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+				height: 2rem;
       }
     }
   }

@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-helmet": "^6.1.0",
+    "react-switch": "^7.0.0"
   }
 }

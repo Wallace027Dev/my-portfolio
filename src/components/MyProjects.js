@@ -22,7 +22,7 @@ const Projects = styled.section`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 27rem;
     overflow-x: auto;
     scroll-snap-type: none;
   }
@@ -49,6 +49,10 @@ const Projects = styled.section`
       height: auto;
       margin-right: 1rem;
     }
+  }
+
+	@media (max-width: 425px) {
+		width: 16rem;
   }
 `;
 

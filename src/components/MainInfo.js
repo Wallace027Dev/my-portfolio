@@ -64,11 +64,14 @@ const Main = styled.section`
     }
   }
 
-  @media screen and (max-width: 1300px) {
-    margin-top: 6rem;
+  @media screen and (max-width: 1024px) {
+    margin-top: 2rem;
 
     .profile {
       flex-direction: column;
+    }
+		.my-paint {
+      width: 28rem;
     }
     .my-info {
       display: flex;

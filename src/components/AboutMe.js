@@ -10,7 +10,7 @@ const AboutStyle = styled.section`
   .myImg {
     width: 20rem;
     height: 20rem;
-    border-radius: 10rem;
+    border-radius: 20rem;
     border: var(--font-color) solid 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -38,10 +38,10 @@ const AboutStyle = styled.section`
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     .myImg {
-      width: 20rem;
-      height: 20rem;
+      width: 16rem;
+      height: 16rem;
     }
 
     .about-me {
@@ -52,7 +52,7 @@ const AboutStyle = styled.section`
 
       p {
         font-size: 1.125rem;
-        max-width: 36rem;
+        max-width: 16rem;
       }
     }
   }
@@ -112,7 +112,7 @@ export default function AboutMe() {
         <div className="center col">
           <h3 className="section-bar center">🤓 Sobre mim</h3>
           <h2>Wallace Vieira Dias Castro</h2>
-					<br />
+          <br />
         </div>
         <p>👋 Olá mundo!</p>
         <span>

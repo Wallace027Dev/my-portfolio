@@ -43,6 +43,25 @@ const Contacts = styled.section`
     }
   }
 
+  @media (min-width: 425px) {
+    text-align: center;
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .link-contacts {
+      > img {
+        height: 3rem;
+        margin-right: 2.5rem;
+      }
+      font-size: 1rem;
+    }
+  }
+
   @media (min-width: 768px) {
     .link-contacts {
       flex-direction: row;
@@ -72,7 +91,6 @@ const Contacts = styled.section`
     }
   }
 `;
-
 
 export default function MyContacts() {
   return (

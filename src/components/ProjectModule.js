@@ -52,6 +52,33 @@ const Project = styled.div`
       }
     }
   }
+
+  @media (max-width: 425px) {
+    .container {
+      margin: 1rem;
+      width: 12rem;
+      height: 14rem;
+      padding: 0.5rem;
+      p {
+        display: none;
+      }
+      img,
+      video {
+        width: 12rem;
+        height: 8rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+        padding-bottom: 0rem;
+				text-align: center;
+      }
+      .cont-skills {
+        h4 {
+          display: none;
+        }
+      }
+    }
+  }
 `;
 
 export default function ProjectModule(props) {
