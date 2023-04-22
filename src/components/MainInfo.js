@@ -172,7 +172,7 @@ const Main = styled.section`
 export default function MainInfo() {
   return (
     <Main id="home">
-      <div className="profile">
+      <div className="profile fade-and-fall">
         <div className="my-info">
           <h2 className="section-bar center">👋 Saudações!</h2>
           <h1>

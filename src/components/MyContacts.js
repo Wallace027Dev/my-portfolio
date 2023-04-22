@@ -5,6 +5,7 @@ import arrowUp from "../images/ArrowUp.svg";
 import styled from "styled-components";
 
 const Contacts = styled.section`
+  gap: 3rem;
   flex-direction: column;
   h2 {
     font-weight: 800;

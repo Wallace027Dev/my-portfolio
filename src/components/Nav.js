@@ -20,7 +20,7 @@ const NavBar = styled.nav`
       a {
         margin: auto 0.75rem;
         color: var(--tertiary);
-        font-weight: 400;
+        font-weight: 700;
         cursor: pointer;
       }
     }
@@ -41,7 +41,7 @@ export default function Nav(props) {
   return (
     <NavBar>
       <div className="center">
-        <div className="nav-bar">
+        <div className="nav-bar fade-and-fall">
           <div>
             <img src={logoWallace} alt="Perfil Logo" />
           </div>

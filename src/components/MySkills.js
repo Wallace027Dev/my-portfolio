@@ -42,7 +42,7 @@ const Skills = styled.section`
     }
   }
 
-	@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .my-skills {
       h2 {
         font-size: 2rem;
@@ -55,12 +55,12 @@ const Skills = styled.section`
       img {
         margin-right: 1rem;
         margin-bottom: 2rem;
-				height: 2.5rem;
+        height: 2.5rem;
       }
     }
   }
 
-	@media (max-width: 425px) {
+  @media (max-width: 425px) {
     .my-skills {
       h2 {
         font-size: 1.25rem;
@@ -73,7 +73,7 @@ const Skills = styled.section`
       img {
         margin-right: 1rem;
         margin-bottom: 2rem;
-				height: 2rem;
+        height: 2rem;
       }
     }
   }
@@ -91,8 +91,8 @@ export default function MySkills() {
           <img className="transit" src={ts} alt="Typescript" />
           <img className="transit" src={react} alt="React" />
           <img className="transit" src={node} alt="Node" />
-          <img className="transit" src={html} alt="HMTL" />
-          <img className="transit" src={css} alt="CSS" />
+          <img className="transit" src={mysql} alt="MySQL" />
+          <img className="transit" src={postcss} alt="PostCSS" />
           <img className="transit" src={github} alt="Github" />
           <img className="transit" src={git} alt="Git" />
           <img className="transit" src={npm} alt="NPM" />
@@ -101,9 +101,9 @@ export default function MySkills() {
         </div>
         <p>Outras techs que já tive experiência</p>
         <div>
-          <img className="transit" src={mysql} alt="MySQL" />
+          <img className="transit" src={html} alt="HMTL" />
+          <img className="transit" src={css} alt="CSS" />
           <img className="transit" src={tailwind} alt="Tailwind" />
-          <img className="transit" src={postcss} alt="PostCSS" />
           <img className="transit" src={sass} alt="Sass" />
           <img className="transit" src={babel} alt="Babel" />
           <img className="transit" src={webpack} alt="Webpack" />

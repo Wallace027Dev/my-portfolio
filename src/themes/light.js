@@ -1,11 +1,11 @@
 const lightTheme = {
   name: "light",
   colors: {
-    bgColor: "#090e16",
-    textColor: "#fff",
+    bgColor: "#f8f3f0",
+    textColor: "#1c1c1c",
     primary: "#7b4ae2",
     secondary: "rgba(123, 74, 226, 0.1)",
-    tertiary: "rgba(255, 255, 255, 0.5)",
+    tertiary: "#675763",
   },
 };
 
