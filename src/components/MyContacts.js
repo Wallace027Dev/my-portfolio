@@ -110,7 +110,7 @@ export default function MyContacts() {
           />
         </div>
       </div>
-      <a href="home">
+      <a href="#home">
         Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{" "}
       </a>
     </Contacts>

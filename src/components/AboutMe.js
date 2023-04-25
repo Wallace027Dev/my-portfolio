@@ -62,8 +62,8 @@ const AboutStyle = styled.section`
     align-items: flex-start;
 
     .myImg {
-      width: 28rem;
-      height: 28rem;
+      width: 21rem;
+      height: 21rem;
       margin-bottom: 0;
     }
 
@@ -83,8 +83,8 @@ const AboutStyle = styled.section`
 
   @media screen and (min-width: 1024px) {
     .myImg {
-      width: 36rem;
-      height: 36rem;
+      width: 32rem;
+      height: 32rem;
     }
 
     .about-me {

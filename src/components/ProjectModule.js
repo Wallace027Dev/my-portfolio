@@ -57,10 +57,11 @@ const Project = styled.div`
     .container {
       margin: 1rem;
       width: 12rem;
-      height: 14rem;
+      height: 13rem;
       padding: 0.5rem;
       p {
         display: none;
+				padding-bottom: 0rem;
       }
       img,
       video {
