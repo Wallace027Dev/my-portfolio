@@ -6,7 +6,7 @@ const Container = styled.h2`
       transform: rotate(0deg) scale(1);
     }
     15% {
-      transform: rotate(20deg) scale(1.05); /* Aumenta a escala em 10% */
+      transform: rotate(20deg) scale(1.05);
     }
     30% {
       transform: rotate(-20deg) scale(0.95);
