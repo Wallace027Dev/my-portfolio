@@ -2,7 +2,10 @@ import whatsapp from '../images/Whatsapp.svg';
 import copy from '../images/copy.svg';
 import email from '../images/email.svg';
 import arrowUp from '../images/ArrowUp.svg';
+
 import styled from 'styled-components';
+import SectionBar from '../components/SectionBar';
+
 import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
 
 const Contacts = styled.section`
@@ -105,7 +108,7 @@ const Contacts = styled.section`
 export default function MyContacts() {
   return (
     <Contacts id="my-contacts" className="center">
-      <h3 className="section-bar center">📬 Contatos</h3>
+      <SectionBar icon="📬" text="Contatos!" />
       <h2>Vamos conversar!</h2>
       <div className="link-contacts center">
         <button

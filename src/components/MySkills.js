@@ -1,26 +1,27 @@
-import react from "../images/React.svg";
-import js from "../images/Javascript.svg";
-import html from "../images/HTML5.svg";
-import css from "../images/CSS3.svg";
-import github from "../images/Github.svg";
-import git from "../images/Git.svg";
-import node from "../images/Nodejs.svg";
-import tailwind from "../images/TailwindCSS.svg";
-import sass from "../images/Sass.svg";
-import mysql from "../images/MySQL.svg";
-import docker from "../images/Docker.svg";
-import postcss from "../images/PostCSS.svg";
-import webpack from "../images/Webpack.svg";
-import firebase from "../images/Firebase.svg";
-import vercel from "../images/Vercel.svg";
-import babel from "../images/Babel.svg";
-import c from "../images/C.svg";
-import ts from "../images/TypeScript.svg";
-import python from "../images/Python.svg";
-import php from "../images/PHP.svg";
-import java from "../images/Java.svg";
-import npm from "../images/npm.svg";
-import styled from "styled-components";
+import react from '../images/React.svg';
+import js from '../images/Javascript.svg';
+import html from '../images/HTML5.svg';
+import css from '../images/CSS3.svg';
+import github from '../images/Github.svg';
+import git from '../images/Git.svg';
+import node from '../images/Nodejs.svg';
+import tailwind from '../images/TailwindCSS.svg';
+import sass from '../images/Sass.svg';
+import mysql from '../images/MySQL.svg';
+import docker from '../images/Docker.svg';
+import postcss from '../images/PostCSS.svg';
+import webpack from '../images/Webpack.svg';
+import firebase from '../images/Firebase.svg';
+import vercel from '../images/Vercel.svg';
+import babel from '../images/Babel.svg';
+import c from '../images/C.svg';
+import ts from '../images/TypeScript.svg';
+import python from '../images/Python.svg';
+import php from '../images/PHP.svg';
+import java from '../images/Java.svg';
+import npm from '../images/npm.svg';
+import styled from 'styled-components';
+import SectionBar from './SectionBar';
 
 const Skills = styled.section`
   .my-skills {
@@ -83,7 +84,8 @@ export default function MySkills() {
   return (
     <Skills>
       <div id="my-skills" className="my-skills center">
-        <h3 className="section-bar center">🧑‍💻 Skills · Experiências</h3>
+        <SectionBar icon="🧑‍💻" text="Skills · Experiências" />
+
         <h2>Tecnologias e habilidades</h2>
         <p>Techs que uso no dia a dia</p>
         <div>

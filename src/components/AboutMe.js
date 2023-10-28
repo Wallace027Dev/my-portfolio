@@ -1,6 +1,7 @@
-import devCount from "../utils/devCount";
-import myPhoto from "../images/MyPhoto.jpg";
-import styled from "styled-components";
+import devCount from '../utils/devCount';
+import myPhoto from '../images/MyPhoto.jpg';
+import styled from 'styled-components';
+import SectionBar from './SectionBar';
 
 const AboutStyle = styled.section`
   flex-direction: column;
@@ -105,12 +106,10 @@ export default function AboutMe() {
     <AboutStyle id="about-me" className="about-me center">
       <div className="center col">
         <img className="myImg" src={myPhoto} alt="Minha foto" />
-        <h3 className="section-bar center disappearTablet">🔗 Portfólio</h3>
-        <h2 className="disappearTablet">Trabalhos e Projetos</h2>
       </div>
       <div className="about-span">
         <div className="center col">
-          <h3 className="section-bar center">🤓 Sobre mim</h3>
+          <SectionBar icon="🤓" text="Sobre mim!" />
           <h2>Wallace Vieira Dias Castro</h2>
           <br />
         </div>
@@ -118,7 +117,7 @@ export default function AboutMe() {
         <span>
           <p>
             👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
-            🎓 Cursando Análise e Desenvolvimento de Sistemas pela{" "}
+            🎓 Cursando Análise e Desenvolvimento de Sistemas pela{' '}
             <a href="https://estacio.br/">Estácio</a>
             <br />
             💡 Interesse em desenvolvimento Fullstack. <br />
@@ -126,8 +125,8 @@ export default function AboutMe() {
             estudar programação e sair com amigos.
           </p>
           <p>
-            🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{" "}
-            <i>Marcus Aurélius</i>{" "}
+            🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{' '}
+            <i>Marcus Aurélius</i>{' '}
           </p>
         </span>
       </div>

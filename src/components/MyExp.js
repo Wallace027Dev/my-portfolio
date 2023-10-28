@@ -1,8 +1,8 @@
-import designIcon from "../images/DesignIcon.svg";
-import projectIcons from "../images/ProjectsIcon.svg";
-import codeIcon from "../images/CodeIcon.svg";
-import devCount from "../utils/devCount";
-import styled from "styled-components";
+import designIcon from '../images/DesignIcon.svg';
+import projectIcons from '../images/ProjectsIcon.svg';
+import codeIcon from '../images/CodeIcon.svg';
+import devCount from '../utils/devCount';
+import styled from 'styled-components';
 
 const Exp = styled.section`
   display: flex;
@@ -34,11 +34,13 @@ const Exp = styled.section`
       width: 15rem;
       height: 15rem;
     }
+
     p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -53,6 +55,7 @@ const Exp = styled.section`
     height: 5rem;
     color: var(--primary);
     background-color: var(--secondary);
+
     h2 {
       font-size: 1.5rem;
       letter-spacing: 1rem;
@@ -64,12 +67,23 @@ const Exp = styled.section`
     .exp-span {
       flex-direction: row;
       justify-content: space-between;
-			gap: 1rem;
+      gap: 1rem;
 
       div {
         max-width: unset;
-				width: 12rem;
+        width: 12rem;
         height: 12rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    .my-job {
+      padding: 0;
+
+      h2 {
+        font-size: 1rem;
+        letter-spacing: 0.75rem;
       }
     }
   }

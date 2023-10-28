@@ -6,6 +6,7 @@ import githubWhite from '../images/github-white.svg';
 import whatsapp from '../images/Whatsapp.svg';
 import styled from 'styled-components';
 import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
+import SectionBar from './SectionBar';
 
 const Main = styled.section`
   margin-top: 8rem;
@@ -175,7 +176,7 @@ export default function MainInfo() {
     <Main id="home">
       <div className="profile fade-and-fall">
         <div className="my-info">
-          <h2 className="section-bar center">👋 Saudações!</h2>
+          <SectionBar icon="👋" text="Saudações!" />
           <h1>
             Wallace <br />
             Vieira
