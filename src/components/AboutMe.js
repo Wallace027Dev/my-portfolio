@@ -12,7 +12,7 @@ const AboutStyle = styled.section`
     width: 20rem;
     height: 20rem;
     border-radius: 20rem;
-    border: var(--font-color) solid 0.5rem;
+    border: var(--font-color) solid 0.25rem;
     margin-bottom: 1.5rem;
   }
 
@@ -41,8 +41,8 @@ const AboutStyle = styled.section`
 
   @media screen and (min-width: 320px) {
     .myImg {
-      width: 16rem;
-      height: 16rem;
+      width: 12rem;
+      height: 12rem;
     }
 
     .about-me {
@@ -63,8 +63,8 @@ const AboutStyle = styled.section`
     align-items: flex-start;
 
     .myImg {
-      width: 21rem;
-      height: 21rem;
+      width: 16rem;
+      height: 16rem;
       margin-bottom: 0;
     }
 
@@ -84,8 +84,8 @@ const AboutStyle = styled.section`
 
   @media screen and (min-width: 1024px) {
     .myImg {
-      width: 32rem;
-      height: 32rem;
+      width: 20rem;
+      height: 20rem;
     }
 
     .about-me {
@@ -116,16 +116,22 @@ export default function AboutMe() {
         <p>👋 Olá mundo!</p>
         <span>
           <p>
-            👨‍💻 Apaixonado por programação a {devCount()} anos. <br />
-            🎓 Cursando Análise e Desenvolvimento de Sistemas pela{' '}
-            <a href="https://estacio.br/">Estácio</a>
-            <br />
-            💡 Interesse em desenvolvimento Fullstack. <br />
             ❤️ Gosto de ler, jogar vôlei, assistir à séries e documentários,
             estudar programação e sair com amigos.
+            <br />
+            👨‍💻 Me apaixonei pela programação por sempre gostar de tecnologia,
+            coisas que envolvem criatividade, e pela inovação que posso trazer
+            ao mundo.
+            <br />
+            🎓 Amo estudar. Quero ser um grande engenheiro de software, e
+            aprender o possível do mundo da tecnologia.
+            <br />
+            💡 Acredito na melhora do mundo, com a descobertas das inovações
+            tecnológicas. A tecnologia está em todo meio, por isso, quero deixar
+            minha contribuição para a posteriedade.
           </p>
           <p>
-            🚀 "Lembra-te, portanto, desse teu poder qua a natureza te deu."{' '}
+            🚀 "Lembra-te, portanto, desse teu poder que a natureza te deu."{' '}
             <i>Marcus Aurélius</i>{' '}
           </p>
         </span>
