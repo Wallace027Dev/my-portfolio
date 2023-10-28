@@ -5,6 +5,7 @@ import Switch from 'react-switch';
 import scrollToSection from '../utils/scrollToSection';
 
 const NavBar = styled.nav`
+  /* Estilos comuns para a barra de navegação */
   .nav-bar {
     background-color: var(--secondary);
     width: 90%;
@@ -15,25 +16,42 @@ const NavBar = styled.nav`
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
-
-    .navigator {
-      display: flex;
-      button {
-        margin: auto 0.75rem;
-        color: var(--tertiary);
-        font-weight: 700;
-        cursor: pointer;
-      }
-    }
   }
 
+  /* Estilos para os botões de navegação */
+  .navigator button {
+    margin: auto 0.75rem;
+    color: var(--tertiary);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Estilos para a lista de navegação */
   @media screen and (max-width: 768px) {
     .nav-bar {
       width: 100%;
       padding: 0 0.75rem;
-      .navigator {
-        display: none;
-      }
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .navigator {
+      display: none;
+    }
+  }
+
+  /* Exibir o ícone do menu móvel quando a tela for menor que 730px */
+  @media screen and (max-width: 730px) {
+    .nav-bar {
+      padding: 1.5rem 4rem;
+      margin-top: 0rem;
+    }
+    .navigator {
+      display: none;
+    }
+    .nav-list {
+      display: none;
+    }
+    .nav-item {
+      display: none;
     }
   }
 `;
