@@ -2,6 +2,7 @@ import logoWallace from '../images/logo-wallace.svg';
 
 import styled from 'styled-components';
 import Switch from 'react-switch';
+import scrollToSection from '../utils/scrollToSection';
 
 const NavBar = styled.nav`
   .nav-bar {
@@ -17,7 +18,7 @@ const NavBar = styled.nav`
 
     .navigator {
       display: flex;
-      a {
+      button {
         margin: auto 0.75rem;
         color: var(--tertiary);
         font-weight: 700;
@@ -46,24 +47,48 @@ export default function Nav(props) {
             <img src={logoWallace} alt="Perfil Logo" />
           </div>
           <div className="navigator">
-            <a className="transit" href="#home">
+            <button
+              type="button"
+              onClick={() => scrollToSection('home')}
+              className="transit remove-effect-button"
+            >
               Home
-            </a>
-            <a className="transit" href="#my-exp">
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('my-exp')}
+              className="transit remove-effect-button"
+            >
               Carreira
-            </a>
-            <a className="transit" href="#about-me">
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('about-me')}
+              className="transit remove-effect-button"
+            >
               Sobre Mim
-            </a>
-            <a className="transit" href="#my-projects">
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('my-projects')}
+              className="transit remove-effect-button"
+            >
               Portfólio
-            </a>
-            <a className="transit" href="#my-skills">
-              Skills
-            </a>
-            <a className="transit" href="#my-contacts">
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('my-skills')}
+              className="transit remove-effect-button"
+            >
+              Habilidades
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('my-contacts')}
+              className="transit remove-effect-button"
+            >
               Contato
-            </a>
+            </button>
           </div>
           <div>
             <Switch

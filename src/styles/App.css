@@ -20,6 +20,16 @@
   color: var(--primary);
 }
 
+.remove-effect-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
