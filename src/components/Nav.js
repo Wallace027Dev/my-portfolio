@@ -1,7 +1,7 @@
-import logoWallace from "../images/logo-wallace.svg";
+import logoWallace from '../images/logo-wallace.svg';
 
-import styled from "styled-components";
-import Switch from "react-switch";
+import styled from 'styled-components';
+import Switch from 'react-switch';
 
 const NavBar = styled.nav`
   .nav-bar {
@@ -68,15 +68,15 @@ export default function Nav(props) {
           <div>
             <Switch
               onChange={props.toggleTheme}
-              checked={props.theme.name === "dark"}
+              checked={props.theme.name === 'dark'}
               height={20}
               width={40}
               checkedIcon={false}
               uncheckedIcon={false}
               handleDiameter={20}
               onHandleColor="#dcdce7"
-              offColor="#2F2F42"
-              onColor="#858597"
+              offColor="#6B52A2"
+              onColor="rgba(123, 74, 226, 0.1)"
             />
           </div>
         </div>
