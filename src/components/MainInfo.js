@@ -1,10 +1,11 @@
-import cvWallace from "../images/cv-wallace.jpg";
-import cvDown from "../images/CVDownload.svg";
-import fotoPerfil from "../images/logo-perfil.svg";
-import linkedinWhite from "../images/linkedin.svg";
-import githubWhite from "../images/github-white.svg";
-import whatsapp from "../images/Whatsapp.svg";
-import styled from "styled-components";
+import cvWallace from '../images/cv-wallace.jpg';
+import cvDown from '../images/CVDownload.svg';
+import fotoPerfil from '../images/logo-perfil.svg';
+import linkedinWhite from '../images/linkedin.svg';
+import githubWhite from '../images/github-white.svg';
+import whatsapp from '../images/Whatsapp.svg';
+import styled from 'styled-components';
+import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
 
 const Main = styled.section`
   margin-top: 8rem;
@@ -70,7 +71,7 @@ const Main = styled.section`
     .profile {
       flex-direction: column;
     }
-		.my-paint {
+    .my-paint {
       width: 28rem;
     }
     .my-info {
@@ -137,7 +138,7 @@ const Main = styled.section`
   @media screen and (max-width: 480px) {
     margin-top: 6rem;
     gap: 5%;
-		.my-paint {
+    .my-paint {
       width: 18rem;
     }
     .my-info {
@@ -200,13 +201,17 @@ export default function MainInfo() {
           <a href={cvWallace} download="CV-Wallace">
             <img className="cvDown transit" src={cvDown} alt="Download my CV" />
           </a>
-          <a href="https://wa.me/qr/YWSCEX37OD3QH1">
+          <button
+            type="button"
+            className="remove-effect-button"
+            onClick={handleWhatsAppRedirect}
+          >
             <img
               className="whatsapp transit"
               src={whatsapp}
               alt="Tell me in whatsapp"
             />
-          </a>
+          </button>
         </div>
       </div>
     </Main>

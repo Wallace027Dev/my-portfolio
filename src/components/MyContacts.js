@@ -1,17 +1,20 @@
-import whatsapp from "../images/Whatsapp.svg";
-import copy from "../images/copy.svg";
-import email from "../images/email.svg";
-import arrowUp from "../images/ArrowUp.svg";
-import styled from "styled-components";
+import whatsapp from '../images/Whatsapp.svg';
+import copy from '../images/copy.svg';
+import email from '../images/email.svg';
+import arrowUp from '../images/ArrowUp.svg';
+import styled from 'styled-components';
+import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
 
 const Contacts = styled.section`
   gap: 3rem;
   flex-direction: column;
+
   h2 {
     font-weight: 800;
     font-size: 3rem;
     margin-bottom: 4rem;
   }
+
   a {
     font-weight: 600;
     font-size: 1.25rem;
@@ -20,22 +23,27 @@ const Contacts = styled.section`
     align-items: center;
     margin-bottom: 3rem;
   }
+
   .link-contacts {
     > img {
       height: 3.75rem;
       margin-right: 2.5rem;
       cursor: pointer;
     }
+
     flex-direction: column;
     font-size: 1.25rem;
     color: var(--tertiary);
+
     div {
       flex-direction: column;
       margin-top: 2rem;
+
       .email-image {
         height: 4.5rem;
         margin-bottom: 0.25rem;
       }
+
       .copy-image {
         height: 2rem;
         margin-top: 1.5rem;
@@ -66,16 +74,17 @@ const Contacts = styled.section`
   @media (min-width: 768px) {
     .link-contacts {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
+
       div {
         margin-top: 0;
         flex-direction: row;
         align-items: center;
+
         .email-image {
           height: 3rem;
-          margin-right: 1.5rem;
-          margin-bottom: 0;
+          margin: 0 0.5rem 0 3rem;
         }
         .copy-image {
           height: 1.5rem;
@@ -99,7 +108,13 @@ export default function MyContacts() {
       <h3 className="section-bar center">📬 Contatos</h3>
       <h2>Vamos conversar!</h2>
       <div className="link-contacts center">
-        <img className="transit" src={whatsapp} alt="Meu whatsapp" />
+        <button
+          type="button"
+          className="remove-effect-button"
+          onClick={handleWhatsAppRedirect}
+        >
+          <img className="transit" src={whatsapp} alt="Meu whatsapp" />
+        </button>
         <div className="center">
           <img className="email-image" src={email} alt="Meu email" />
           <p>wallaceofc@hotmail.com</p>
@@ -111,7 +126,7 @@ export default function MyContacts() {
         </div>
       </div>
       <a href="#home">
-        Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{" "}
+        Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{' '}
       </a>
     </Contacts>
   );
