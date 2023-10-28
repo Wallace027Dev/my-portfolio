@@ -60,7 +60,7 @@ const Projects = styled.section`
 export default function MyProjects() {
   return (
     <>
-      <SectionBar icon="🔗" text="Portfólio!" />
+      <SectionBar icon="🔗" text="Portifólio!" />
 
       <Projects id="my-projects" className="carroussel">
         <ProjectModule
