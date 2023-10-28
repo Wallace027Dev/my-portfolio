@@ -27,16 +27,19 @@ const Skills = styled.section`
   .my-skills {
     text-align: center;
     flex-direction: column;
-    h2 {
+
+    h1 {
       font-weight: 800;
       font-size: 3rem;
       margin-bottom: 6.25rem;
     }
+
     p {
       font-size: 1.5rem;
       color: var(--tertiary);
       margin-bottom: 2.5rem;
     }
+
     img {
       margin-right: 2rem;
       margin-bottom: 2.75rem;
@@ -49,10 +52,12 @@ const Skills = styled.section`
         font-size: 2rem;
         margin-bottom: 3.125rem;
       }
+
       p {
         font-size: 1.25rem;
         margin-bottom: 1.875rem;
       }
+
       img {
         margin-right: 1rem;
         margin-bottom: 2rem;
@@ -67,10 +72,12 @@ const Skills = styled.section`
         font-size: 1.25rem;
         margin-bottom: 3.125rem;
       }
+
       p {
         font-size: 1rem;
         margin-bottom: 1.875rem;
       }
+
       img {
         margin-right: 1rem;
         margin-bottom: 2rem;
@@ -86,7 +93,7 @@ export default function MySkills() {
       <div id="my-skills" className="my-skills center">
         <SectionBar icon="🧑‍💻" text="Skills · Experiências" />
 
-        <h2>Tecnologias e habilidades</h2>
+        <h1>Tecnologias e habilidades</h1>
         <p>Techs que uso no dia a dia</p>
         <div>
           <img className="transit" src={js} alt=" Javascript" />

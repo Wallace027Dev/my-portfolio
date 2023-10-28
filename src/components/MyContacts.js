@@ -9,13 +9,16 @@ import SectionBar from '../components/SectionBar';
 import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
 
 const Contacts = styled.section`
-  gap: 3rem;
   flex-direction: column;
+
+  h1 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
 
   h2 {
     font-weight: 800;
     font-size: 3rem;
-    margin-bottom: 4rem;
   }
 
   a {
@@ -24,7 +27,6 @@ const Contacts = styled.section`
     color: var(--primary);
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
   }
 
   .link-contacts {
@@ -34,22 +36,21 @@ const Contacts = styled.section`
       cursor: pointer;
     }
 
+    margin: 3rem 0;
+
     flex-direction: column;
     font-size: 1.25rem;
     color: var(--tertiary);
 
     div {
       flex-direction: column;
-      margin-top: 2rem;
 
       .email-image {
         height: 4.5rem;
-        margin-bottom: 0.25rem;
       }
 
       .copy-image {
         height: 2rem;
-        margin-top: 1.5rem;
         cursor: pointer;
       }
     }
@@ -59,17 +60,19 @@ const Contacts = styled.section`
     text-align: center;
     h2 {
       font-size: 1rem;
-      margin-bottom: 1.5rem;
     }
+
     a {
       font-size: 1rem;
       margin-bottom: 2rem;
     }
+
     .link-contacts {
       > img {
         height: 3rem;
         margin-right: 2.5rem;
       }
+
       font-size: 1rem;
     }
   }
@@ -89,6 +92,7 @@ const Contacts = styled.section`
           height: 3rem;
           margin: 0 0.5rem 0 3rem;
         }
+
         .copy-image {
           height: 1.5rem;
           margin-top: 0;
@@ -107,9 +111,9 @@ const Contacts = styled.section`
 
 export default function MyContacts() {
   return (
-    <Contacts id="my-contacts" className="center">
+    <Contacts className="center">
       <SectionBar icon="📬" text="Contatos!" />
-      <h2>Vamos conversar!</h2>
+      <h1>Vamos conversar!</h1>
       <div className="link-contacts center">
         <button
           type="button"
