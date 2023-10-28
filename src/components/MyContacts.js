@@ -16,11 +16,6 @@ const Contacts = styled.section`
     font-size: 3rem;
   }
 
-  h2 {
-    font-weight: 800;
-    font-size: 3rem;
-  }
-
   a {
     font-weight: 600;
     font-size: 1.25rem;
@@ -56,11 +51,8 @@ const Contacts = styled.section`
     }
   }
 
-  @media (min-width: 425px) {
+  @media (min-width: 320px) {
     text-align: center;
-    h2 {
-      font-size: 1rem;
-    }
 
     a {
       font-size: 1rem;

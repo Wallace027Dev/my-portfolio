@@ -39,7 +39,6 @@ const Container = styled.h2`
     font-weight: 700;
     font-size: 1.15rem;
     margin-bottom: 1.5rem;
-    margin-top: 1rem;
   }
 `;
 
