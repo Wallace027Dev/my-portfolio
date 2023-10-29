@@ -9,10 +9,11 @@ import Nav from './components/Nav';
 import MainInfo from './components/MainInfo';
 import MyExp from './components/MyExp';
 import AboutMe from './components/AboutMe';
-import MyProjects from './components/MyProjects';
+// import MyProjects from './components/MyProjects';
 import MySkills from './components/MySkills';
 import MyContacts from './components/MyContacts';
 import Footer from './components/Footer';
+import Slider from './components/Slider';
 
 export default function App() {
   const [theme, setTheme] = useState(light);
@@ -32,7 +33,8 @@ export default function App() {
           <div className="line"></div>
           <AboutMe />
           <div className="line"></div>
-          <MyProjects />
+          {/* <MyProjects /> */}
+          <Slider />
           <div className="line"></div>
           <MySkills />
           <div className="line"></div>

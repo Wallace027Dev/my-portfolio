@@ -1,7 +1,8 @@
-import { useState } from "react";
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Project = styled.div`
+  padding: 1rem;
+
   .container {
     margin: 1rem;
     width: 22.5rem;
@@ -12,12 +13,12 @@ const Project = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     p {
       font-size: 0.875rem;
       color: var(--tertiary);
     }
-    img,
-    video {
+    img {
       width: 22rem;
       height: 12.5rem;
       border-radius: 0.5rem;
@@ -48,51 +49,12 @@ const Project = styled.div`
         color: var(--primary);
         font-weight: 700;
         font-size: 1rem;
-        margin-right: 0.5rem;
-      }
-    }
-  }
-
-  @media (max-width: 425px) {
-    .container {
-      margin: 1rem;
-      width: 12rem;
-      height: 13rem;
-      padding: 0.5rem;
-      p {
-        display: none;
-				padding-bottom: 0rem;
-      }
-      img,
-      video {
-        width: 12rem;
-        height: 8rem;
-      }
-      h3 {
-        font-size: 1.25rem;
-        padding-bottom: 0rem;
-				text-align: center;
-      }
-      .cont-skills {
-        h4 {
-          display: none;
-        }
       }
     }
   }
 `;
 
 export default function ProjectModule(props) {
-  const [showVideo, setShowVideo] = useState(false);
-
-  const handleMouseEnter = () => {
-    setShowVideo(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowVideo(false);
-  };
-
   return (
     <Project>
       <a href={props.linkProject}>
@@ -107,26 +69,8 @@ export default function ProjectModule(props) {
               <h4 className="center">{props.skill2}</h4>
               <h4 className="center">{props.skill3}</h4>
             </div>
-            <div
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              {showVideo ? (
-                <video
-                  src={props.videoProj}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  autoPlay
-                  muted
-                />
-              ) : (
-                <img
-                  src={props.imageProject}
-                  alt={props.acess}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              )}
+            <div>
+              <img src={props.imageProject} alt={props.acess} />
             </div>
           </div>
         </div>
