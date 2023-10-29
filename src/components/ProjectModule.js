@@ -31,13 +31,6 @@ const Project = styled.div`
       padding-bottom: 1rem;
     }
 
-    transition: transform 0.3s;
-    transform: translateY(0);
-
-    &:hover {
-      transform: translateY(-10px);
-    }
-
     .cont-skills {
       display: flex;
       flex-direction: row;
@@ -60,16 +53,16 @@ const Project = styled.div`
   @media only screen and (max-width: 425px) {
     .container {
       margin: 1rem;
-      width: 12rem;
-      height: 13rem;
+      width: 16rem;
+      height: 18rem;
       padding: 0.5rem;
       p {
-        display: none;
+        font-size: 0.75rem;
         padding-bottom: 0rem;
       }
       img {
-        width: 12rem;
-        height: 8rem;
+        width: 16rem;
+        height: 9rem;
       }
       h3 {
         font-size: 1.25rem;
@@ -87,7 +80,7 @@ const Project = styled.div`
 
 export default function ProjectModule(props) {
   return (
-    <Project>
+    <Project className="tranformThis">
       <a href={props.linkProject}>
         <div className="container">
           <div>

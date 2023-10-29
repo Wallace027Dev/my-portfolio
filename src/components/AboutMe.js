@@ -1,4 +1,3 @@
-import devCount from '../utils/devCount';
 import myPhoto from '../images/MyPhoto.jpg';
 import styled from 'styled-components';
 import SectionBar from './SectionBar';
@@ -36,6 +35,7 @@ const AboutStyle = styled.section`
       margin-bottom: 1.5rem;
       color: var(--tertiary);
       max-width: 22rem;
+      padding: 1rem;
     }
   }
 

@@ -14,11 +14,21 @@
   transition: transform 0.51s;
 }
 
-.transit:hover,
-.transit:focus {
-  transform: translateY(-1px) scale(1.1);
-  color: var(--primary);
+@media screen and (min-width: 768px) {
+  .transit:hover,
+  .transit:focus {
+    transform: translateY(-2px) scale(1.05);
+    color: var(--primary);
+  }
+
+  
+  .tranformThis:hover {
+    transition: transform 0.4s;
+    transform: translateY(0);
+    transform: translateY(-10px);
+  }
 }
+
 
 .remove-effect-button {
   background: none;
