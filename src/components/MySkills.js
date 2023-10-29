@@ -27,7 +27,9 @@ const Skills = styled.section`
   .my-skills {
     text-align: center;
     flex-direction: column;
-
+    div {
+      padding: 0 1rem;
+    }
     h1 {
       font-weight: 800;
       font-size: 3rem;

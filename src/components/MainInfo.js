@@ -75,7 +75,7 @@ const Main = styled.section`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1145px) {
     margin-top: 2rem;
 
     .profile {

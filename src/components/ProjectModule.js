@@ -30,19 +30,20 @@ const Project = styled.div`
       font-size: 1.25rem;
       padding-bottom: 1rem;
     }
-    .transit-proj {
-      transition: transform 0.51s;
-      :hover,
-      :focus {
-        transform: translateX(-1px) scale(1.1);
-        background-color: var(--secondary);
-      }
+
+    transition: transform 0.3s;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-10px);
     }
+
     .cont-skills {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: 1.5rem;
+
       h4 {
         background-color: var(--secondary);
         width: 6.625rem;
@@ -66,8 +67,7 @@ const Project = styled.div`
         display: none;
         padding-bottom: 0rem;
       }
-      img,
-      video {
+      img {
         width: 12rem;
         height: 8rem;
       }
@@ -89,7 +89,7 @@ export default function ProjectModule(props) {
   return (
     <Project>
       <a href={props.linkProject}>
-        <div className="container transit-proj">
+        <div className="container">
           <div>
             <h3>{props.projectName}</h3>
             <p>{props.subtitle}</p>

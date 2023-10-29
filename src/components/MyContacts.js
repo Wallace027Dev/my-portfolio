@@ -54,6 +54,10 @@ const Contacts = styled.section`
   @media (min-width: 320px) {
     text-align: center;
 
+    h1 {
+      padding: 0 1rem;
+    }
+
     a {
       font-size: 1rem;
       margin-bottom: 2rem;
