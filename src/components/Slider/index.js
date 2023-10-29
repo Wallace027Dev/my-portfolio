@@ -14,9 +14,17 @@ export default function Slider() {
       <Splide
         options={{
           type: 'loop',
-          perPage: 3,
           autoplay: true,
           interval: 2500,
+          perPage: 3, // Para pc
+          breakpoints: {
+            1440: {
+              perPage: 2, // Para notebook
+            },
+            1024: {
+              perPage: 1, // Para tablet
+            },
+          },
         }}
       >
         <SplideSlide>

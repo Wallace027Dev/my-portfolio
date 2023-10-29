@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const Project = styled.div`
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .container {
     margin: 1rem;
@@ -49,6 +51,35 @@ const Project = styled.div`
         color: var(--primary);
         font-weight: 700;
         font-size: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .container {
+      margin: 1rem;
+      width: 12rem;
+      height: 13rem;
+      padding: 0.5rem;
+      p {
+        display: none;
+        padding-bottom: 0rem;
+      }
+      img,
+      video {
+        width: 12rem;
+        height: 8rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+        padding-bottom: 0rem;
+        text-align: center;
+      }
+      .cont-skills {
+        h4 {
+          display: none;
+        }
       }
     }
   }
