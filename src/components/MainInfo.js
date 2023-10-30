@@ -131,6 +131,7 @@ const Main = styled.section`
       h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+        text-align: center;
       }
 
       p {
@@ -221,7 +222,7 @@ export default function MainInfo() {
             Wallace <br />
             Vieira
           </h1>
-          <p>Fullstack developer</p>
+          <p>Desenvolvedor</p>
           <div>
             <a href="https://www.linkedin.com/in/wallace-dev/">
               <img

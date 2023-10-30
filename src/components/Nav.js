@@ -32,7 +32,7 @@ const NavBar = styled.nav`
       width: 100%;
       padding: 0 0.75rem;
       border-radius: 0;
-      height: 1.6rem;
+      margin-top: 0;
     }
     .navigator {
       display: none;
@@ -41,10 +41,6 @@ const NavBar = styled.nav`
 
   /* Exibir o ícone do menu móvel quando a tela for menor que 730px */
   @media screen and (max-width: 730px) {
-    .nav-bar {
-      padding: 1.5rem 4rem;
-      margin-top: 0rem;
-    }
     .navigator {
       display: none;
     }
