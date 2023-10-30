@@ -100,6 +100,7 @@ const Main = styled.section`
         margin-bottom: 1rem;
       }
     }
+
     .my-cv {
       flex-direction: row;
       justify-content: space-between;
@@ -145,6 +146,7 @@ const Main = styled.section`
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      margin-top: 2rem;
 
       .cvDown {
         width: 4rem;
@@ -181,17 +183,6 @@ const Main = styled.section`
 
       img {
         height: 1.5rem;
-      }
-    }
-
-    .my-cv {
-      .cvDown {
-        width: 3rem;
-        margin-right: 0.5rem;
-      }
-
-      .whatsapp {
-        width: 7rem;
       }
     }
   }

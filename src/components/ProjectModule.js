@@ -66,7 +66,7 @@ const Project = styled.div`
       }
       h3 {
         font-size: 1.25rem;
-        padding-bottom: 0rem;
+        padding-bottom: 0.75rem;
         text-align: center;
       }
       .cont-skills {

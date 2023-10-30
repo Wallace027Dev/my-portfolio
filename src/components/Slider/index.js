@@ -31,7 +31,7 @@ export default function Slider() {
           <ProjectModule
             className="carrossel-item"
             projectName="Autenticação e Armazenamento"
-            subtitle="Nesse projeto foi usado React, Routers e Firebase. Foi um exercício para fixar ferramentas do React e aplicar o Firebase em um projeto."
+            subtitle="Nesse projeto foi usado React, Routers e Firebase."
             skill1="Firebase"
             skill2="React JS"
             skill3="Javascript"
@@ -44,7 +44,7 @@ export default function Slider() {
           <ProjectModule
             className="carrossel-item"
             projectName="To Do List"
-            subtitle="Uma lista de tarefas desenvolvida com JS puro, manipulando o DOM e Eventos(). No projeto foi usado o pré-processador Tailwind para estilização e transpilado com Babel."
+            subtitle="Uma lista de tarefas desenvolvida com JS puro, manipulando o DOM e Eventos()."
             skill1="Javascript"
             skill2="Babel"
             skill3="Tailwind"
@@ -57,7 +57,7 @@ export default function Slider() {
           <ProjectModule
             className="carrossel-item"
             projectName="Media Social"
-            subtitle="Projeto de media social, onde posts são sumbetidos, e, enviados e salvos em uma API. Por enquanto essa API só funciona quando executada em uma aplicação local, como explicado no repositório desse projeto no Github. Mas em breve estou adicionando um banco de dados funcional ao projeto."
+            subtitle="Projeto de media social, onde posts são sumbetidos, e, enviados e salvos em uma API."
             skill1="Node"
             skill2="React JS"
             skill3="Fetch API"
@@ -71,8 +71,7 @@ export default function Slider() {
             className="carrossel-item"
             projectName="Plataforma de Cursos"
             subtitle="Projeto final da Staart, onde a proposta era fazer uma plataforma de cursos,
-				criando um design do zero e consumindo uma api com as informações dos cursos.
-				Foi usado React, styled-components, axios, react router, e mais.
+				criando um design do zero e consumindo uma api com as informações dos cursos..
 				"
             skill1="React JS"
             skill2="Axios"
