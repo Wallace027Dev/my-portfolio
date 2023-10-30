@@ -6,17 +6,19 @@ import arrowUp from '../images/ArrowUp.svg';
 import styled from 'styled-components';
 import SectionBar from '../components/SectionBar';
 
+import scrollToSection from '../utils/scrollToSection';
 import handleWhatsAppRedirect from '../utils/handleWhatsAppRedirect';
 
 const Contacts = styled.section`
   flex-direction: column;
+  margin-bottom: 6rem;
 
   h1 {
     font-weight: 800;
     font-size: 3rem;
   }
 
-  a {
+  button {
     font-weight: 600;
     font-size: 1.25rem;
     color: var(--primary);
@@ -107,7 +109,7 @@ const Contacts = styled.section`
 
 export default function MyContacts() {
   return (
-    <Contacts className="center">
+    <Contacts id="my-contacts" className="center">
       <SectionBar icon="📬" text="Contatos!" />
       <h1>Vamos conversar!</h1>
       <div className="link-contacts center">
@@ -128,9 +130,15 @@ export default function MyContacts() {
           />
         </div>
       </div>
-      <a href="#home">
-        Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{' '}
-      </a>
+      <div>
+        <button
+          type="button"
+          onClick={() => scrollToSection('nav')}
+          className="transit remove-effect-button"
+        >
+          Voltar ao topo <img src={arrowUp} alt="Seta para cima" />{' '}
+        </button>
+      </div>
     </Contacts>
   );
 }

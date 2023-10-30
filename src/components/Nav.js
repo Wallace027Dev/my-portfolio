@@ -31,7 +31,8 @@ const NavBar = styled.nav`
     .nav-bar {
       width: 100%;
       padding: 0 0.75rem;
-      border-radius: 0 0 0.5rem 0.5rem;
+      border-radius: 0;
+      height: 1.6rem;
     }
     .navigator {
       display: none;
@@ -58,7 +59,7 @@ const NavBar = styled.nav`
 
 export default function Nav(props) {
   return (
-    <NavBar>
+    <NavBar id="nav">
       <div className="center">
         <div className="nav-bar fade-and-fall">
           <div>

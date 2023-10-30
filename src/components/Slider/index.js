@@ -10,7 +10,7 @@ import staartClone from '../../images/projectThumbs/staartClone.png';
 
 export default function Slider() {
   return (
-    <Container>
+    <Container id="my-projects">
       <Splide
         options={{
           type: 'loop',
