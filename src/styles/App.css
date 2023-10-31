@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary: var(--font-color);
+  --bg-color: #ffffff;
+  --font-color: #000000;
+  --secondary: #808080;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -15,20 +22,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  .transit:hover,
-  .transit:focus {
+  .transit:hover, .transit:focus {
     transform: translateY(-2px) scale(1.05);
     color: var(--primary);
   }
 
-  
   .tranformThis:hover {
     transition: transform 0.4s;
-    transform: translateY(0);
     transform: translateY(-10px);
   }
 }
-
 
 .remove-effect-button {
   background: none;
@@ -66,7 +69,6 @@ a {
   font-weight: 600;
   color: var(--font-color);
 }
-
 
 .line {
   width: 90%;
