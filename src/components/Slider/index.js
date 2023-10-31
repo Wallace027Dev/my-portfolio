@@ -41,6 +41,7 @@ export default function Slider() {
             imageProject={bakoads}
             acess="Bakoads Anúncios"
             linkProject="https://github.com/Wallace027Dev/loran-m-rosa"
+            linkSite="https://bakoads.vercel.app"
           />
         </SplideSlide>
         <SplideSlide>
@@ -54,6 +55,7 @@ export default function Slider() {
             imageProject={ofcBordados}
             acess="Oficina de Bordados"
             linkProject="https://github.com/Wallace027Dev/ofc-site"
+            linkSite="https://ofcbordados.com.br"
           />
         </SplideSlide>
         <SplideSlide>
@@ -68,6 +70,7 @@ export default function Slider() {
             imageProject={staartClone}
             acess="Staart Clone"
             linkProject="https://github.com/Wallace027Dev/staart-clone"
+            linkSite="https://staart-clone.vercel.app"
           />
         </SplideSlide>
 
@@ -82,19 +85,21 @@ export default function Slider() {
             imageProject={mariaVitoria}
             acess="Portifólio - Maria Vitória"
             linkProject="https://github.com/Wallace027Dev/portfolio-mavi"
+            linkSite="https://mariafranca.vercel.app"
           />
         </SplideSlide>
         <SplideSlide>
           <ProjectModule
             className="carrossel-item"
-            projectName="Autenticação e Armazenamento"
+            projectName="Autenticação"
             subtitle="Nesse projeto foi usado React, Routers e Firebase."
             skill1="Firebase"
             skill2="React JS"
             skill3="Javascript"
             imageProject={authStorage}
-            acess="Autenticação e Armazenamento"
-            linkProject="https://autenticacao-e-armazenamento-react.vercel.app/login"
+            acess="Autenticação"
+            linkSite="https://autenticacao-e-armazenamento-react.vercel.app/login"
+            linkProject="https://github.com/Wallace027Dev/Autenticacao-armazenamento-dados-react"
           />
         </SplideSlide>
         <SplideSlide>
@@ -108,6 +113,7 @@ export default function Slider() {
             imageProject={todoPrint}
             acess="To Do List"
             linkProject="https://to-do-olive-six.vercel.app/"
+            linkSite="https://to-do-olive-six.vercel.app/"
           />
         </SplideSlide>
         <SplideSlide>
@@ -120,7 +126,8 @@ export default function Slider() {
             skill3="Fetch API"
             imageProject={postsApi}
             acess="Social Media"
-            linkProject="https://consumo-de-api-com-react.vercel.app/"
+            linkProject="https://github.com/Wallace027Dev/Consumo-de-API-React/"
+            linkSite="https://consumo-de-api-com-react.vercel.app/"
           />
         </SplideSlide>
       </Splide>

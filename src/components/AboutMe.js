@@ -1,4 +1,4 @@
-import myPhoto from '../images/MyPhoto.jpg';
+import myPhoto from '../images/MyPhoto.jpeg';
 import styled from 'styled-components';
 import SectionBar from './SectionBar';
 

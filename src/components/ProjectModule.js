@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
+import github from '../images/Github.svg';
+import site from '../images/site.svg';
+
 const Project = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 1.6rem;
 
   .container {
     margin: 1rem;
@@ -17,19 +21,33 @@ const Project = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    p {
-      font-size: 0.875rem;
-      color: var(--tertiary);
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      img {
+        height: 1.6rem;
+        margin-left: 1rem;
+      }
     }
-    img {
+
+    .project-image {
       width: 22rem;
       height: 12.5rem;
       border-radius: 0.5rem;
     }
+
+    p {
+      font-size: 0.875rem;
+      color: var(--tertiary);
+    }
+
     h3 {
       font-weight: 700;
       font-size: 1.25rem;
-      padding-bottom: 1rem;
     }
 
     .cont-skills {
@@ -54,14 +72,24 @@ const Project = styled.div`
   @media only screen and (max-width: 425px) {
     .container {
       margin: 1rem;
-      width: 16rem;
-      height: 18rem;
-      padding: 0.5rem;
+      width: 18rem;
+      height: 20rem;
+      padding: 0 0 0.75rem 0;
+
+      .title {
+        margin-top: 0.5rem;
+        flex-direction: column;
+
+        img {
+          margin: 0 0.5rem;
+        }
+      }
+
       p {
         font-size: 0.75rem;
         padding-bottom: 0rem;
       }
-      img {
+      .project-image {
         width: 16rem;
         height: 9rem;
       }
@@ -82,24 +110,40 @@ const Project = styled.div`
 export default function ProjectModule(props) {
   return (
     <Project className="tranformThis">
-      <a href={props.linkProject}>
-        <div className="container">
-          <div>
+      <div className="container">
+        <div>
+          <div className="title">
             <h3>{props.projectName}</h3>
-            <p>{props.subtitle}</p>
+            <div>
+              {props.linkProject && (
+                <a target="blank" href={props.linkProject}>
+                  <img className="transit" src={github} alt="Github link" />
+                </a>
+              )}
+              {props.linkSite && (
+                <a target="blank" className="transit" href={props.linkSite}>
+                  <img className="transit" src={site} alt="Site link" />
+                </a>
+              )}
+            </div>
+          </div>
+          <p>{props.subtitle}</p>
+        </div>
+        <div>
+          <div className="cont-skills">
+            <h4 className="center">{props.skill1}</h4>
+            <h4 className="center">{props.skill2}</h4>
+            <h4 className="center">{props.skill3}</h4>
           </div>
           <div>
-            <div className="cont-skills">
-              <h4 className="center">{props.skill1}</h4>
-              <h4 className="center">{props.skill2}</h4>
-              <h4 className="center">{props.skill3}</h4>
-            </div>
-            <div>
-              <img src={props.imageProject} alt={props.acess} />
-            </div>
+            <img
+              className="project-image"
+              src={props.imageProject}
+              alt={props.acess}
+            />
           </div>
         </div>
-      </a>
+      </div>
     </Project>
   );
 }
