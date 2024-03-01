@@ -1,4 +1,4 @@
-import cvWallace from '../images/cv-wallace.jpg';
+import cvWallace from '../images/CV-WallaceVieira.jpg';
 import cvDown from '../images/CVDownload.svg';
 import fotoPerfil from '../images/logo-perfil.svg';
 import linkedinWhite from '../images/linkedin.svg';
