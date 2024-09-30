@@ -7,42 +7,6 @@
   --secondary: #808080;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.transit {
-  transition: transform 0.4s;
-}
-
-@media screen and (min-width: 768px) {
-  .transit:hover, .transit:focus {
-    transform: translateY(-2px) scale(1.05);
-    color: var(--primary);
-  }
-
-  .tranformThis:hover {
-    transition: transform 0.4s;
-    transform: translateY(-10px);
-  }
-}
-
-.remove-effect-button {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -70,11 +34,43 @@ a {
   color: var(--font-color);
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.transit {
+  transition: transform 0.4s;
+}
+
+.remove-effect-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 .line {
   width: 90%;
   height: 1px;
   background-color: var(--secondary);
   margin: 8rem 0;
+}
+
+.fade-and-fall {
+  opacity: 0.5;
+  transform: translateY(-50px);
+  animation-name: fadeAndFall;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeAndFall {
@@ -88,10 +84,14 @@ a {
   }
 }
 
-.fade-and-fall {
-  opacity: 0.5;
-  transform: translateY(-50px);
-  animation-name: fadeAndFall;
-  animation-duration: 1.25s;
-  animation-fill-mode: forwards;
+@media screen and (min-width: 768px) {
+  .transit:hover, .transit:focus {
+    transform: translateY(-2px) scale(1.05);
+    color: var(--primary);
+  }
+
+  .tranformThis:hover {
+    transition: transform 0.4s;
+    transform: translateY(-10px);
+  }
 }
