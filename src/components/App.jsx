@@ -1,19 +1,20 @@
-import './styles/App.css';
-import light from './themes/light';
-import dark from './themes/dark';
-import MyComponent from './styles/global';
-import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import Nav from './components/Nav';
-import MainInfo from './components/MainInfo';
-import MyExp from './components/MyExp';
-import AboutMe from './components/AboutMe';
-// import MyProjects from './components/MyProjects';
-import MySkills from './components/MySkills';
-import MyContacts from './components/MyContacts';
-import Footer from './components/Footer';
-import Slider from './components/Slider';
+import '../styles/App.css';
+import MyComponent from '../styles/global';
+import light from '../themes/light';
+import dark from '../themes/dark';
+
+import Nav from './Nav';
+import MainInfo from './MainInfo';
+import MyExp from './MyExp';
+import AboutMe from './AboutMe';
+// import MyProjects from './MyProjects';
+import MySkills from './MySkills';
+import MyContacts from './MyContacts';
+import Footer from './Footer';
+import Slider from './Slider';
 
 export default function App() {
   const [theme, setTheme] = useState(light);
