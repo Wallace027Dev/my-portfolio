@@ -5,8 +5,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Container from './styles';
 
 import ProjectModule from '../ProjectModule';
-import { projects } from './projects';
-
+import { projects } from '../../mocks/projects';
 
 export default function Slider() {
   return (

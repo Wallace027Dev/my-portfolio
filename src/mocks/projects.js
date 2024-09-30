@@ -1,10 +1,10 @@
-import authStorage from "../../images/projectThumbs/auth-storage.png";
-import todoPrint from "../../images/projectThumbs/todoPrint.png";
-import postsApi from "../../images/projectThumbs/postsApi.png";
-import staartClone from "../../images/projectThumbs/staartClone.png";
-import bakoads from "../../images/projectThumbs/bakoads.png";
-import mariaVitoria from "../../images/projectThumbs/mariaVitoria.png";
-import ofcBordados from "../../images/projectThumbs/ofcBordados.png";
+import authStorage from "../images/projectThumbs/auth-storage.png";
+import todoPrint from "../images/projectThumbs/todoPrint.png";
+import postsApi from "../images/projectThumbs/postsApi.png";
+import staartClone from "../images/projectThumbs/staartClone.png";
+import bakoads from "../images/projectThumbs/bakoads.png";
+import mariaVitoria from "../images/projectThumbs/mariaVitoria.png";
+import ofcBordados from "../images/projectThumbs/ofcBordados.png";
 
 export const projects = [
   {
